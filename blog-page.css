@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.container-xxl {
+    margin-top: 79px;
+}
+.head-row {
+    margin-bottom: 2rem;
+}
+.card-img-top:hover {
+    transform: scale(1.2);
+}
+.img-cont{
+    overflow: hidden;
+}
