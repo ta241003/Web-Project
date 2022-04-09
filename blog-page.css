@@ -15,8 +15,13 @@ body {
     top: 0;
     width: 100%;
 }
+/* Body */
 .main-cont {
     margin-top: 85px;
+}
+.content-1 {
+
+    min-height: 350px;
 }
 .card-img-top:hover {
     transition: 0.3s;
