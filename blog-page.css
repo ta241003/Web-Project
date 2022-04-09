@@ -15,12 +15,8 @@ body {
     top: 0;
     width: 100%;
 }
-.container-xxl {
+.main-cont {
     margin-top: 85px;
-}
-.head-content {
-    display: flex;
-    align-items: center;
 }
 .card-img-top:hover {
     transition: 0.3s;
@@ -28,4 +24,20 @@ body {
 }
 .img-cont{
     overflow: hidden;
+}
+/* Footer */
+.footer {
+    background: #212529;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+ul li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+.tilte-footer {
+    text-transform: uppercase;
+    color: #d8b14e;
 }
