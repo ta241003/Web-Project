@@ -23,8 +23,8 @@ body {
     min-height: 200px;
 }
 .card-img-top:hover {
-    transition: 0.3s;
-    transform: scale(1.2);
+    transition: 0.8s;
+    transform: scale(1.5);
 }
 .img-cont{
     overflow: hidden;
