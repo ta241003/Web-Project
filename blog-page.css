@@ -34,7 +34,7 @@
 /* Reponsive here */
 @media screen and (min-width:992px) {
     .header {
-        height: 620px;
+        height: 600px;
     }
 }
 @media screen and (min-width:577px){
@@ -46,7 +46,7 @@
     }
     .header {
         margin-top: 79px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     /* .header-quote {
         padding-right: 300px;
