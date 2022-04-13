@@ -1,15 +1,3 @@
 .main-cont-home {
     margin-top: 80px;
 }
-.header-content {
-    height: 620px;
-    background: 
-    url(/img/head-home.jpg),
-    linear-gradient(135deg, #1306129d, #0a2225);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    color: #fff;
-    font-size: 3.5rem;
-}

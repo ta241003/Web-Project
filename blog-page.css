@@ -1,8 +1,18 @@
 /* Body */
-
-.content-1 {
-    min-height: 200px;
+@media screen and (min-width:577px){
+    .img-header {
+        clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
+    }
+    .img-content-2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
+    }
 }
+/* .content-1 {
+    min-height: 200px;
+    clip-path: polygon(0 0, 100% 0%, 100% 79%, 50% 100%, 0 79%);
+    color: #000;
+    font-size: 2rem;
+} */
 .card-img-top:hover {
     transition: 0.8s;
     transform: scale(1.5);
