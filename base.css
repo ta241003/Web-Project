@@ -23,5 +23,10 @@ ul {
 }
 /* Main Cont */
 .main-cont {
-    margin-top: 105px;
+    /* margin-top: 105px; */
+}
+
+/* Image */
+img {
+    object-fit: cover;
 }
