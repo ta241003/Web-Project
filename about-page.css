@@ -9,7 +9,6 @@
     display: grid;
     place-content: center;
     text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 74%, 61% 84%, 0 100%, 0 100%);
     color: #fff;
 }
 .header h1 {
@@ -35,6 +34,7 @@
 @media screen and (min-width:992px) {
     .header {
         height: 600px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 89%, 57% 94%, 0% 100%);
     }
 }
 @media screen and (min-width:577px){
