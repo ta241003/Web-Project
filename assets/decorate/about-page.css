@@ -3,9 +3,9 @@
     margin-top: 79px;
     background: 
     linear-gradient(135deg, #48556380, #29323c),
-    url('/img/head-home.jpg') no-repeat center;
+    url('/img/head-home.jpg') no-repeat center; 
     background-size: cover;
-    min-height: 320px;
+    min-height: 300px;
     display: grid;
     place-content: center;
     text-align: center;
@@ -52,20 +52,15 @@
         padding-right: 300px;
     } */
 }
+.content-1 {
+}
+.main-cont {
+    /* background-color: #212529; */
+}
 .card-img-top:hover {
     transition: 0.8s;
     transform: scale(1.5);
 }
 .img-cont{
     overflow: hidden;
-}
-/* Footer */
-.footer {
-    background: #212529;
-    color: #fff;
-    padding: 3rem 2rem;
-}
-.tilte-footer {
-    text-transform: uppercase;
-    color: #d8b14e;
 }
