@@ -160,3 +160,6 @@ img {
     height: 100%;
     column-gap: 1em;
 }
+.ls-ft-text {
+    color: var(--bs-gray);
+}
