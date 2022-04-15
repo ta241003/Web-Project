@@ -94,7 +94,7 @@ img {
     bottom: 0;
     background: var(--bs-dark);
     color: var(--bs-white);
-    padding: 3rem 2rem;
+    padding: 1rem 0;
 }
 .tilte-footer {
     margin-top: 15px;
