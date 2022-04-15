@@ -1,9 +1,8 @@
 /* Head */
 .header {
-    margin-top: 79px;
     background: 
     linear-gradient(135deg, #48556380, #29323c),
-    url('/img/head-home.jpg') no-repeat center; 
+    url('/assets/img/head-home.jpg') no-repeat center; 
     background-size: cover;
     min-height: 300px;
     display: grid;
@@ -45,7 +44,6 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
     }
     .header {
-        margin-top: 79px;
         font-size: 1.1rem;
     }
     /* .header-quote {
