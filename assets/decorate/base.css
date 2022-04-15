@@ -44,6 +44,12 @@
     --bs-body-color-rgb: 33,37,41;
     --bs-body-bg-rgb: 255,255,255;
 }
+/* Reponsive */
+@media screen and (min-width:577px){
+    .form-account {
+        /* width: ; */
+    }
+}
 body {
     padding: 0;
     margin: 0;
@@ -86,6 +92,24 @@ ul {
 /* Image */
 img {
     object-fit: cover;
+}
+/* Form Account */
+.form-account {
+    width: 100%;
+    /* position: relative; */
+    position: absolute;
+    z-index: 1000;
+    top: 89px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    background-color: var(--bs-white);
+    display: none;
+}
+/* Show form */
+.show {
+    display: block;
 }
 /* Footer */
 .footer {
@@ -141,7 +165,7 @@ img {
 .pm-pn-cont {
     max-width: 180px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5em;
 }
 .pm-pn-item {
