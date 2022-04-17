@@ -45,9 +45,15 @@
     --bs-body-bg-rgb: 255,255,255;
 }
 /* Reponsive */
-@media screen and (min-width:577px){
-    .form-account {
-        /* width: ; */
+
+@media screen and (min-width:991px){
+    .login-btn {
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width:200px){
+    .login-btn {
+        width: 100%;
     }
 }
 body {
@@ -95,7 +101,6 @@ img {
 }
 /* Form Account */
 .form-account {
-    width: 100%;
     /* position: relative; */
     position: absolute;
     z-index: 1000;
@@ -125,6 +130,9 @@ img {
     text-transform: uppercase;
     color: var(--bs-primary-text);
 }
+.first-footer {
+    min-width: 165px;
+}
 .contact-item {
     display: flex;
     flex-direction: row;
@@ -149,7 +157,8 @@ img {
     border: none;
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
+    place-content: center;
+    place-items: center;
 }
 .login-btn .bi {
     font-size: 1.2rem;
