@@ -99,6 +99,9 @@ ul {
 img {
     object-fit: cover;
 }
+.btn {
+    background-color: var(--bs-primary-text);
+}
 /* Form Account */
 .form-account {
     /* position: relative; */
