@@ -1,6 +1,6 @@
 # Web-Project
 
-
+run server with javascript
 
 hotel website management
 
@@ -8,10 +8,11 @@ hotel website management
 booking room
 save data of customer
 make payment (paypal . . .)
+save information when successfully booking room 
+send email to verify 
 
 
-
-using php to connect to database
+using javascript to connect to database
 mysql host database of the website
 
 html css javascript in interface, interaction

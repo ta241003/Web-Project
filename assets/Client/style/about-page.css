@@ -2,7 +2,7 @@
 .header {
     background: 
     linear-gradient(135deg, #48556380, #29323c),
-    url('/assets/img/head-home.jpg') no-repeat center; 
+    url('/assets/Client/img/head-home.jpg') no-repeat center; 
     background-size: cover;
     min-height: 300px;
     display: grid;
