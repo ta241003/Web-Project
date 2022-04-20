@@ -83,6 +83,7 @@ ul {
 .nav-item a {
     color: var(--bs-white);
 }
+.nav-link {font-size: 1.2rem;}
 .nav-pills .nav-link.active, .btn-nav-bar {
     background-color: var(--bs-primary-text);
 }

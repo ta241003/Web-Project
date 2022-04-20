@@ -2,7 +2,7 @@ const express = require('express');
 require('dotenv').config(); // include env file
 const app = express();
 
-app.use(express.static('Client')); // use static file
+app.use("/Client", express.static('Client')); // use static file
 
 
 app.get('/', (req, res) => {
