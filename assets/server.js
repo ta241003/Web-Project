@@ -3,8 +3,7 @@ require('dotenv').config(); // include env file
 const app = express();
 
 app.use(express.static('Client')); // use static file
-// app.use('/client' ,express.static('client')); // use static file
-// app.use('/client' ,express.static('client')); // use static file
+
 
 // get home page
 app.get('/', (req, res) => {
