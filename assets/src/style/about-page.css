@@ -2,7 +2,7 @@
 .header {
     background: 
     linear-gradient(135deg, #48556380, #29323c),
-    url('/assets/Client/img/head-home.jpg') no-repeat center; 
+    url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center; 
     background-size: cover;
     min-height: 300px;
     display: grid;
@@ -35,14 +35,14 @@
         height: 600px;
         clip-path: polygon(0% 0%, 100% 0, 100% 89%, 57% 94%, 0% 100%);
     }
-}
-@media screen and (min-width:577px){
     .img-header {
         clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
     }
     .img-content-2 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
     }
+}
+@media screen and (min-width:577px){
     .header {
         font-size: 1.1rem;
     }
