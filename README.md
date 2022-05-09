@@ -22,7 +22,7 @@ boostrap 5, owl carousel
 
 
 # upload on subdomain lab.finalterm.online
-
+http://lab.finalterm.online/
 
 # run demo with database and localhost
 
