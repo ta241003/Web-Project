@@ -13,13 +13,34 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/src/style/home-page.css">
   <link rel="stylesheet" href="/assets/src/style/base.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl carousel theme -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- Favicon -->
   <link rel="icon" href="/assets/src/img/logo-hotel.png" type="image/x-icon">
   <title>Home</title>
 </head>
 
 <body>
+  <style>
+    #owl-demo .item {
+      margin: 3px;
+    }
 
+    #owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
     <div class="container">
@@ -66,29 +87,15 @@
   </div>
   <div class="container-xxl main-cont">
     <!-- Content 1 -->
-    
+
     <!-- GAP -->
     <div class="gap"></div>
     <!-- Content 4 -->
     <div class="gap" style="text-align: center;margin-bottom:2rem">
       <h1 style="text-transform: uppercase;font-weight:700">Join us</h1>
     </div>
-    <div class="row">
-      <!-- Card slide -->
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card">
-          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#card1" class="btn btn-warning">Join us</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col"> 
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item">
         <div class="card">
           <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
           <div class="card-body">
@@ -99,10 +106,9 @@
           </div>
         </div>
       </div>
-      <!-- Card 3 -->
-      <div class="col">
+      <div class="item">
         <div class="card">
-          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card1.jpg" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -111,18 +117,21 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- GAP -->
-    <div class="gap"></div>
-    <!-- Blog -->
-    <!-- Title -->
-    <div class="gap" style="text-align: center;margin-bottom:2rem">
-      <h1 style="text-transform: uppercase;font-weight:700">Temp</h1>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card2.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- GAP -->
+  <div class="gap"></div>
   <!-- Footer -->
   <footer class="footer">
 
@@ -223,6 +232,38 @@
     crossorigin="anonymous"></script>
   <!-- SCRIPT -->
   <script src="/assets/src/javascript/all-page.js"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 1. Owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="assets/owl-carousel/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false
+    })
+  </script>
 </body>
 
 </html>
