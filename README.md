@@ -17,4 +17,15 @@ mysql host database of the website
 
 html css javascript in interface, interaction
 
+boostrap 5, owl carousel
+# focus on interface
+
+
+# upload on subdomain lab.finalterm.online
+
+
+# run demo with database and localhost
+
+
+
 
