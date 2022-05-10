@@ -39,7 +39,7 @@
     }
   </style>
   <div class="container">
-    <div id="owl-demo" class="owl-carousel owl-theme">
+    <!-- <div id="owl-demo" class="owl-carousel owl-theme">
       <div class="item">
         <div class="card">
           <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
@@ -73,16 +73,61 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="gap"></div>
+    <div class="owl-carousel owl-theme">
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="1">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="item" data-merge="2">
+        <img src="/assets/src/img/card1.jpg" alt="" class="img-fluid">
+      </div>
     </div>
   </div>
-    <!-- <div class="item"><img src="/assets/src/img/card2.jpg" alt="Owl Image" /></div>
+  <!-- <div class="item"><img src="/assets/src/img/card2.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card3.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card4.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card2.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card3.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card4.jpg" alt="Owl Image" /></div>
     <div class="item"><img src="/assets/src/img/card1.jpg" alt="Owl Image" /></div> -->
-    
+
   <div class="gap"></div>
   <footer class="footer">
 
@@ -195,24 +240,22 @@
 
   <script>
     $('.owl-carousel').owlCarousel({
+      items: 5,
       loop: true,
       margin: 10,
-      nav: true,
+      merge: true,
       responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
+        678: {
+          mergeFit: true
         },
         1000: {
-          items: 3
-        }
+          mergeFit: false
+        } 
       },
-      autoplay: true,
+      //autoplay: true,
       autoplayTimeout: 1000,
       autoplayHoverPause: false
-    })
+    });
   </script>
 </body>
 

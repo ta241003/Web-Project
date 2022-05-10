@@ -30,17 +30,6 @@
 </head>
 
 <body>
-  <style>
-    #owl-demo .item {
-      margin: 3px;
-    }
-
-    #owl-demo .item img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  </style>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
     <div class="container">
@@ -83,7 +72,38 @@
 
   <div class="header">
     <!-- Carousel -->
-
+    <div id="owl-demo-header" class="owl-carousel owl-theme carousel-header">
+      <div class="item item-1">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+      <div class="item item-2">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+      <div class="item item-3">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+    </div>
   </div>
   <div class="container-xxl main-cont">
     <!-- Content 1 -->
@@ -94,7 +114,7 @@
     <div class="gap" style="text-align: center;margin-bottom:2rem">
       <h1 style="text-transform: uppercase;font-weight:700">Join us</h1>
     </div>
-    <div id="owl-demo" class="owl-carousel owl-theme">
+    <div id="owl-demo" class="owl-carousel owl-theme near-bod">
       <div class="item">
         <div class="card">
           <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
@@ -244,7 +264,7 @@
   <script src="assets/owl-carousel/owl.carousel.js"></script>
   <!-- Owl Carousel -->
   <script>
-    $('.owl-carousel').owlCarousel({
+    $('.near-bod').owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
@@ -262,7 +282,28 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false
-    })
+    });
+    // header
+    $('.carousel-header').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      dots: false
+    });
+    
   </script>
 </body>
 
