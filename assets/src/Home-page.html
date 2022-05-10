@@ -112,7 +112,7 @@
     <div class="gap"></div>
     <!-- Content 4 -->
     <div class="gap" style="text-align: center;margin-bottom:2rem">
-      <h1 style="text-transform: uppercase;font-weight:700">Join us</h1>
+      <h1 style="text-transform: uppercase;font-weight:700">Join <span style="color: red;">us</span></h1>
     </div>
     <div id="owl-demo" class="owl-carousel owl-theme near-bod">
       <div class="item">
@@ -152,9 +152,31 @@
   </div>
   <!-- GAP -->
   <div class="gap"></div>
+  <!-- Blogs full width -->
+  
+  <div class="fw-content">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-2 fw-content">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-2">
+            <div class="col col-lft">
+              <img class=" img-lft" src="/assets/src/img/img-cont-item1.jpg" alt="">
+              <img class=" img-lft" src="/assets/src/img/img-cont-item3.jpg" alt="">
+            </div>
+            <div class="col col-img">
+              <img class="img-fluid" src="/assets/src/img/img-cont-item2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col col-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste nemo optio illum ratione sit eaque dolor!
+          Odio eum quaerat, ipsam, voluptatibus dolore eaque obcaecati velit at voluptate possimus esse.
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="footer">
-
     <div class="container">
       <div class="row">
         <a class="navbar-brand img-footer" href="#">
@@ -267,7 +289,7 @@
     $('.near-bod').owlCarousel({
       loop: true,
       margin: 10,
-      nav: true,
+      nav: false,
       responsive: {
         0: {
           items: 1

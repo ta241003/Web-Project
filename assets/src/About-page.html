@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- Favicon -->
   <link rel="icon" href="/assets/src/img/logo-hotel.png" type="image/x-icon">
-  <title>DDD About</title>
+  <title>About</title>
 </head>
 
 <body>
@@ -82,7 +82,7 @@
   <div class="container-xxl main-cont">
     <!-- Content 1 -->
     <div class="gap" style="text-align: center;margin-bottom:2rem">
-      <h1 style="text-transform: uppercase;font-weight:700">About us</h1>
+      <h1 style="text-transform: uppercase;font-weight:700">About <span style="color: red;">us</span></h1>
     </div>
     <div class="row row-cols-1 row-cols-sm-2 shape-divide-item">
       <div class="col">
@@ -135,25 +135,34 @@
     <div class="gap"></div>
     <!-- Content 4 -->
     <div class="gap" style="text-align: center;margin-bottom:2rem">
-      <h1 style="text-transform: uppercase;font-weight:700">Join us</h1>
+      <h1 style="text-transform: uppercase;font-weight:700">Join <span style="color: red;">us</span></h1>
     </div>
-    <div class="row row-cols-1 row-cols-sm-2">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card" style="width: 100%;">
+    <div id="owl-demo" class="owl-carousel owl-theme near-bod">
+      <div class="item">
+        <div class="card">
           <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#card1" class="btn btn-warning">Join us</a>
+            <a href="#card2" class="btn btn-warning">Join us</a>
           </div>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="col">
-        <div class="card" style="width: 100%;">
-          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card1.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card2.jpg" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -339,7 +348,7 @@
   <!-- Owl Carousel -->
   <script>
     // scripting carousel by jquery
-    $('.owl-carousel').owlCarousel({
+    $('.near-bod').owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
@@ -348,10 +357,10 @@
           items: 1
         },
         600: {
-          items: 2
+          items: 3
         },
         1000: {
-          items: 3
+          items: 4
         }
       },
       autoplay: true,

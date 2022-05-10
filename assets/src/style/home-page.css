@@ -1,3 +1,37 @@
-.main-cont-home {
+.main-cont {
     margin-top: 80px;
+}
+.fw-content {
+    padding: 1.5rem 0;
+    background-color: #ffcd4d;
+}
+.col-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.col-img,
+.col-lft {
+    padding: 0;
+}
+
+.img-lft {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.col-content {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 5rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .fw-content {
+        display: none;
+    }
 }
