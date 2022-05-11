@@ -4,6 +4,8 @@
 .fw-content {
     padding: 2.5rem 0;
     background-color: #ffcd4d;
+}
+.last-content {
     clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
 }
 .col-img {
@@ -30,12 +32,21 @@
     place-content: center;
     text-align: center;
 }
+.top-content {
+    
+}
 
 @media screen and (max-width:1000px) {
-    .fw-content {
+    .last-content {
         display: none;
     }
+    @media screen and (max-width:767.5px){
+        .img-cont-header {
+            display: none;
+        }
+    }
 }
+
 
 /* searching form */
 .cont-search {
@@ -52,6 +63,6 @@
 .search-input {
     max-width: 800px;
 }
-.btn-warning {
+.btn-fsearch {
     padding: 0 0.5rem;
 }
