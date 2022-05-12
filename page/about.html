@@ -23,122 +23,79 @@
   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <!-- Favicon -->
   <link rel="icon" href="http://lab.finalterm.online/img/logo-hotel.png" type="image/x-icon">
-  <title>Home</title>
+  <title>About</title>
 </head>
 
 <body>
   <style>
-    /* Home page css */
-    .main-cont-home {
-      /* margin-top: 80px; */
-    }
-
-    .fw-content {
-      padding: 2.5rem 0;
-      background-color: #ffcd4d;
-    }
-
-    .last-content {
-      clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
-    }
-
-    .col-img {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .col-img,
-    .col-lft {
-      padding: 0;
-    }
-
-    .img-lft {
-      width: 100%;
-      height: 50%;
-      object-fit: cover;
-    }
-
-    .col-content {
-      text-transform: uppercase;
-      font-weight: 600;
-      color: #fff;
-      padding: 0 5rem;
+    /*about css*/
+    /* Head */
+    .header {
+      background:
+        linear-gradient(135deg, #48556380, #29323c),
+        url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center;
+      background-size: cover;
+      min-height: 300px;
       display: grid;
       place-content: center;
       text-align: center;
+      color: #fff;
     }
 
-    .top-content {}
-
-    @media screen and (max-width:1000px) {
-      .last-content {
-          display: none;
-      }
-      @media screen and (max-width:767.5px){
-          .img-cont-header {
-              display: none;
-          }
-      }
-      @media screen and (max-width:376px){
-          .container h3 {
-              text-align: center;
-          }
-          .btn-contact-end {
-              margin-left: 50%;
-              transform: translateX(-50%);
-          }
-      }
-  }
-  @media screen and (min-width:377px) {
-      .btn-contact-end {
-          clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-      }
-  }
-  
-  
-  /* searching form */
-  .cont-search {
-      /* display: flex; */
-  }
-  .searching-form {
-      display: flex;
-      /* margin: auto; */
-      justify-content: center;
-      align-items: center;
-      min-height: 120px;
-      /* max-width: 800px; */
-  }
-  .search-input {
-      max-width: 800px;
-  }
-  .btn-fsearch {
-      padding: 0 0.5rem;
-  }
-  
-  /*  */
-  .btn-contact-end {
+    .header h1 {
       text-transform: uppercase;
-      font-size: 0.7rem;
-      border: none;
-      min-width: 100px;
-      padding: 0.3rem 0.5rem;
-      background: #212529;
-  }
-  
-  /* .block-outer{
-      width: 500px;
-      height: 100px;
-      border-right: 2px solid #fff;
-      clip-path: circle(50% at 50% 50%);
-  } */
-  .block-inner{
-  
-  }
-  
-  .contact-content {
+    }
+
+    .header button {
+      width: 175px;
+      height: auto;
+      border: 2px solid #ffcd4d;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffcd4d;
+      background-color: transparent;
+      padding: 0.3rem 1rem;
+    }
+
+    .header button:hover {
+      transition: .3s;
+      background-color: #212529;
+    }
+
+    /* Body */
+    /* Reponsive here */
+    @media screen and (min-width:992px) {
+      .header {
+        height: 600px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 89%, 57% 94%, 0% 100%);
+      }
+
+      .img-header {
+        clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
+      }
+
+      .img-content-2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
+      }
+    }
+
+    @media screen and (min-width:577px) {
+      .header {
+        font-size: 1.1rem;
+      }
+    }
+
+    .card-img-top:hover {
+      transition: 0.8s;
+      transform: scale(1.5);
+    }
+
+    .img-cont {
       overflow: hidden;
-  }
-    /* base css */
+    }
+
+    /*base css*/
     /* Variable */
     :root {
       --bs-blue: #0d6efd;
@@ -406,20 +363,20 @@
 
     .item-1 {
       background: linear-gradient(135deg, #48556380, #29323caa),
-        url('http://lab.finalterm.online/img/img-card2.jpg') no-repeat center;
+        url('/assets/src/img//img-card2.jpg') no-repeat center;
       background-size: cover;
     }
 
     .item-2 {
       background: linear-gradient(135deg, #48556380, #29323caa),
-        url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center;
+        url('/assets/src/img/head-home.jpg') no-repeat center;
       background-size: cover;
 
     }
 
     .item-3 {
       background: linear-gradient(135deg, #48556380, #29323caa),
-        url('http://lab.finalterm.online/img/img-header.jpg') no-repeat center;
+        url('/assets/src/img/img-header.jpg') no-repeat center;
       background-size: cover;
 
     }
@@ -464,10 +421,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://lab.finalterm.online">Home</a>
+            <a class="nav-link" aria-current="page" href="http://lab.finalterm.online/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Room</a>
@@ -475,92 +432,83 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Experiences</a>
           </li>
-          <!-- Form -->
-          <div class="  ">
-            <button id="login-btn" type="button" class="btn btn-warning btn-nav-bar login-btn">
-              <i class="bi bi-person-circle"></i>
-              <b>Account</b>
-            </button>
-          </div>
         </ul>
+        <!-- Form -->
+        <div class="  ">
+          <button id="login-btn" type="button" class="btn btn-warning btn-nav-bar login-btn">
+            <i class="bi bi-person-circle"></i>
+            <b>Account</b>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- BODY -->
+  <!-- Content -->
   <div class="header">
-    <!-- Carousel -->
-    <div id="owl-demo-header" class="owl-carousel owl-theme carousel-header">
-      <div class="item item-1">
-        <form action="" class="content">
-          <h1>Content Header</h1>
-          <p>A well-known quote, contained in a blockquote element</p>
-          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-          <button type="button">Click Here</button>
-        </form action="">
-      </div>
-      <div class="item item-2">
-        <form action="" class="content">
-          <h1>Content Header</h1>
-          <p>A well-known quote, contained in a blockquote element</p>
-          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-          <button type="button">Click Here</button>
-        </form action="">
-      </div>
-      <div class="item item-3">
-        <form action="" class="content">
-          <h1>Content Header</h1>
-          <p>A well-known quote, contained in a blockquote element</p>
-          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-          <button type="button">Click Here</button>
-        </form action="">
-      </div>
-    </div>
+    <form action="" class="content">
+      <h1>Content Header</h1>
+      <p>A well-known quote, contained in a blockquote element</p>
+      <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+      <button type="submit">Click Here</button>
+    </form action="">
   </div>
-  <div class="gap" style="text-align: center;margin-top:2rem">
-    <h1 style="text-transform: uppercase;font-weight:700">find <span style="color: red;">Room</span></h1>
-  </div>
-  <!-- Search form/mobile/tablet -->
-  <div class="container  cont-search">
-    <div class="row">
-      <form class="d-flex searching-form">
-        <input class="form-control search-input me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-warning btn-fsearch" type="button">
-          <i class="bi bi-search" style="color: #212529;"></i>
-        </button>
-      </form>
-    </div>
-  </div>
-  <!-- Blogs -->
-  <div class="fw-content top-content">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-2 fw-content">
-        <div class="col col-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-        <div class="col img-cont-header">
-          <div class="row row-cols-1 row-cols-2">
-            <div class="col col-lft">
-              <img class=" img-lft" src="http://lab.finalterm.online/img/img-cont-item5.jpg" alt="">
-              <img class=" img-lft" src="http://lab.finalterm.online/img/img-cont-item6.jpg" alt="">
-            </div>
-            <div class="col col-img">
-              <img class="img-fluid" src="http://lab.finalterm.online/img/img-cont-item4.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- GAP -->
-  <div class="gap"></div>
-  <div class="container-xxl main-cont-home">
+  <div class="container main-cont">
     <!-- Content 1 -->
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">About <span style="color: red;">us</span></h1>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 shape-divide-item">
+      <div class="col">
+        <img src="http://lab.finalterm.online/img/img-hotel.jpg" class="img-fluid img-header" alt="">
+      </div>
+      <div class="col header-quote align-self-center">
+        <figure>
+          <blockquote class="blockquote">
+            <h4>A well-known quote, contained in a blockquote element.</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #d8b14e;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content Middle 2 & 3 -->
+    <!-- TEXT -->
+    <div class="row row-cols-1 content-1">
+      <figure class="text-center align-self-center">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: #d8b14e;">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content 3 -->
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col align-self-center">
+        <figure>
+          <blockquote class="blockquote">
+            <h4>A well-known quote, contained in a blockquote element.</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #d8b14e;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <img src="http://lab.finalterm.online/img/room-content.jpg" class="img-fluid img-content-2" alt="">
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content 4 -->
     <div class="gap" style="text-align: center;margin-bottom:2rem">
       <h1 style="text-transform: uppercase;font-weight:700">Join <span style="color: red;">us</span></h1>
     </div>
@@ -604,55 +552,68 @@
     </div>
     <!-- GAP -->
     <div class="gap"></div>
-  </div>
-  <!-- Audio -->
-
-  <div class="container-xxl">
-    <figure class="text-center align-self-center">
-      <blockquote class="blockquote">
-        <p>A well-known quote, contained in a blockquote element.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer" style="color: #d8b14e;">
-        Someone famous in <cite title="Source Title">Source Title</cite>
-      </figcaption>
-    </figure>
+    <!-- Blog -->
+    <!-- Title -->
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">Blogs</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card1.jpg" class="card-img-top" alt="card1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card2.jpg" class="card-img-top" alt="card2">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card3.jpg" class="card-img-top" alt="card3">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card4.jpg" class="card-img-top" alt="card4">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- GAP -->
   <div class="gap"></div>
-
-  <div class="row"></div>
-  <!-- Blogs full width -->
-  <div class="fw-content last-content">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-2 fw-content">
-        <div class="col">
-          <div class="row row-cols-1 row-cols-2">
-            <div class="col col-lft">
-              <img class=" img-lft" src="http://lab.finalterm.online/img/img-cont-item1.jpg" alt="">
-              <img class=" img-lft" src="http://lab.finalterm.online/img/img-cont-item3.jpg" alt="">
-            </div>
-            <div class="col col-img">
-              <img class="img-fluid" src="http://lab.finalterm.online/img/img-cont-item2.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col col-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste nemo optio illum ratione sit eaque dolor!
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Contact form sub content -->
-  <!-- Contact form sub content -->
-  <div class="fw-content contact-content">
-    <div class="container">
-      <div class="block-outer">
-        <div class="block-inner"></div>
-      </div>
-      <h3>Find out <br> how can we help you</h3>
-      <button class="btn-contact-end" style="color: #fff;">Contact us</button>
-    </div>
-  </div>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -699,10 +660,12 @@
           <h3 class="tilte-footer blockquote-footer">Download</h3>
           <ul class="dl-cont">
             <li class="dl-item">
-              <img src="http://lab.finalterm.online/img/dl-img-1.jpg" alt="download-img" width="150" class="img-fluid">
+              <img src="http://lab.finalterm.online/img/dl-img-1.jpg" alt="download-img" width="150"
+                class="img-fluid">
             </li>
             <li class="dl-item">
-              <img src="http://lab.finalterm.online/img/dl-img-2.jpg" alt="download-img" width="150" class="img-fluid">
+              <img src="http://lab.finalterm.online/img/dl-img-2.jpg" alt="download-img" width="150"
+                class="img-fluid">
             </li>
           </ul>
         </div>
@@ -710,10 +673,10 @@
           <h3 class="tilte-footer blockquote-footer">useful links</h3>
           <nav class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active useful-links-item" aria-current="page" href="http://lab.finalterm.online">Home</a>
+              <a class="nav-link useful-links-item" aria-current="page" href="http://lab.finalterm.online">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link useful-links-item" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
+              <a class="nav-link active useful-links-item" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link useful-links-item" aria-current="page" href="#">Room</a>
@@ -749,7 +712,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
   <!-- SCRIPT -->
-  <script src="http://lab.finalterm.online/javascript/all-page.js"></script>
+  <script src="/http://lab.finalterm.online//javascript/all-page.js"></script>
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -762,46 +725,26 @@
   <script src="assets/owl-carousel/owl.carousel.js"></script>
   <!-- Owl Carousel -->
   <script>
+    // scripting carousel by jquery
     $('.near-bod').owlCarousel({
       loop: true,
       margin: 10,
-      nav: false,
+      nav: true,
       responsive: {
         0: {
           items: 1
         },
         600: {
-          items: 2
+          items: 3
         },
         1000: {
-          items: 3
+          items: 4
         }
       },
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false
-    });
-    // header
-    $('.carousel-header').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      },
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: false,
-      dots: false
-    });
-
+    })
   </script>
 </body>
 
