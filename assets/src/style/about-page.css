@@ -38,6 +38,10 @@
     .img-header {
         clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
     }
+
+    .img-service {
+        clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
+    }
     .img-content-2 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
     }
@@ -54,3 +58,5 @@
 .img-cont{
     overflow: hidden;
 }
+
+
