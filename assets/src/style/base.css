@@ -337,7 +337,6 @@ img {
     transition: .3s;
     background-color: #212529;
 }
-
 /* Service CSS */
 /* 6 Services */
 .service-item-wrap{
@@ -390,7 +389,6 @@ img {
 .service-menu-area ul li a p span{
     color: var(--secondary-color);
 }
-
 
 @media screen and (min-width:992px) {
     #owl-demo-header .item{
