@@ -43,7 +43,84 @@
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
+    /*Background Color*/
+    --primary-color: #021832;
+    --secondary-color: #caa169;
+    --bg-color: #f4f4f4;
+    --bg-white: #fff;
+    --bg-black: #000;
+     /*Text Style*/
+     --primary-font: 'Poppins', sans-serif;
+     --secondary-font: 'Oswald', sans-serif;
+     --primary-text: #021832;
+     --secondary-text: #caa169;
+     --text-white: #fff;
+     --text-black: #151515;
+     --text-gray: #e4e4e4;
 }
+
+section{
+    padding: 3.125rem 0;
+}
+.main-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid var(--primary-color);
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+
+}
+h3{
+    margin-bottom: 1.875rem;
+    line-height: 2.875rem;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+}
+h3 span{
+    color: var(--secondary-color);
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--primary-text);
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+h6{
+    font-size: .875rem;
+    color: var(--primary-text);
+    margin-bottom: .9375rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+}
+p{
+    font-size: 1rem;
+    color: var(--text-black);
+    line-height: 1.625rem;
+}
+.section-title:after{
+    content: '';
+    background-image: url('../img/title-icon.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -0.9375rem;
+    height: .9375rem;
+}
+
 /* Reponsive */
 
 @media screen and (min-width: 991px) {
@@ -272,7 +349,7 @@ img {
     margin-bottom: 2.8125rem;
 }
 
-.service-item-area ul li a .service-icon{
+.service-menu-area ul li a .service-icon{
     height: 5.625rem;
     width: 5.625rem;
     background-color:var(--secondary-color);
@@ -294,13 +371,26 @@ img {
   margin-left:0.5625rem;
 }
 .service-menu-area ul li:nth-child(2){
- margin-left:-2 9375rem;
+ margin-left:-2.9375rem;
+}
+.service-menu-area ul li:nth-child(3){
+    margin-left:-6.375rem;
+}
+.service-menu-area ul li:nth-child(4){
+    margin-left:-8.8125rem;
 }
 
-.service-desc{
-    text-decoration: none;
-    font-size: 35px; color: rgb(47, 96, 202);
+.service-menu-area ul li a p,
+.service-menu-area ul li a h5{
+    padding-left: 6.875rem;
+    display: block;
+    text-align: left;
 }
+
+.service-menu-area ul li a p span{
+    color: var(--secondary-color);
+}
+
 
 @media screen and (min-width:992px) {
     #owl-demo-header .item{
