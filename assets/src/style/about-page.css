@@ -68,3 +68,36 @@
     url(/assets/src/img/services/bg2.jpg) no-repeat center;
     background-size: cover; 
 }
+
+.service-content {
+    background-size: cover;
+    min-height: 300px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.service-content h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.service-content button {
+    width: 125px;
+    height: auto;
+    border: 2px solid #ffcd4d;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffcd4d;
+    background-color: transparent;
+    padding: 0.3rem 1rem;
+}
+.service-content:hover .bi-arrow-bar-right {
+    transform: translateX(2rem);
+}
+.service-content button:hover {
+    transition: .3s;
+    background-color: #212529;
+}
