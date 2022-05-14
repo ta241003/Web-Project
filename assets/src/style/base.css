@@ -59,6 +59,26 @@
      --text-gray: #e4e4e4;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 0.7em;
+}
+
+::-webkit-scrollbar-track{
+    background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6a45e;
+    border-radius: 150vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bb863d;
+}
+/*  */
+
 section{
     padding: 3.125rem 0;
 }
@@ -80,7 +100,7 @@ section{
     border-color: var(--secondary-color);
 
 }
-h3{
+.nav h3{
     margin-bottom: 1.875rem;
     line-height: 2.875rem;
     font-weight: 700;
@@ -91,14 +111,15 @@ h3{
 h3 span{
     color: var(--secondary-color);
 }
-h5{
+.nav h5{
     font-size: 1.5rem;
     line-height: 1;
     color: var(--primary-text);
     font-weight: 500;
     font-family: var(--secondary-font);
+    font-weight: bold;
 }
-h6{
+.col-sm-12 h6{
     font-size: .875rem;
     color: var(--primary-text);
     margin-bottom: .9375rem;
@@ -106,7 +127,7 @@ h6{
     font-weight: 300;
     font-family: var(--secondary-font);
 }
-p{
+.nav p{
     font-size: 1rem;
     color: var(--text-black);
     line-height: 1.625rem;
@@ -131,6 +152,47 @@ p{
 @media screen and (min-width: 200px) {
     .login-btn {
         width: 100%;
+    }
+}
+
+/* Test Responsive */
+@media (max-width: 1308px) {
+    /* service */
+    .service-item-wrap .tab-content img{
+        width: 100%;
+    }
+    
+    .service-menu-area ul li a{
+        margin-bottom: 8125rem;
+        overflow: hidden;
+    }
+    .service-menu-area ul li:nth-child(1){
+        margin-left:-4.4375rem;
+    }
+    .service-menu-area ul li:nth-child(2){
+        margin-left:-6.9375rem;
+    }
+    .service-menu-area ul li:nth-child(3){
+        margin-left:-9.375rem;
+    }
+    .service-menu-area ul li:nth-child(4){
+        margin-left:-12.8125rem;
+    }
+    .service-menu-area ul li a h5{
+        margin-bottom:.375rem;
+    }
+}
+
+@media (max-width:990px){
+    /* services*/
+    .service-menu-area{
+    padding:1.5rem 0.5rem;
+    }
+    .service-menu-area ul li{
+    margin-left:unset !important;
+    }
+    .service-item-wrap .tab-content img{
+        height: 100%;
     }
 }
 body {
@@ -338,6 +400,8 @@ img {
     background-color: #212529;
 }
 
+
+
 /* Service CSS */
 /* 6 Services */
 .service-item-wrap{
@@ -391,6 +455,172 @@ img {
     color: var(--secondary-color);
 }
 
+
+.counter{
+    background-image: url('../img/counter-bg.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.125rem;
+    position: relative;
+}
+
+.counter::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.counter h1,
+.counter p{
+    position: relative;
+    z-index: 3;
+    color: var(--text-white);
+}
+
+
+/*Roooms*/
+section{
+    padding: 3.125rem 0;
+}
+.main-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid var(--primary-color);
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+
+}
+.rooms_wrapper h3{
+    margin-bottom: 1.875rem;
+    line-height: 2.875rem;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+}
+.rooms_wrapper h3 span{
+    color: var(--secondary-color);
+}
+.rooms_wrapper h5{
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--primary-text);
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+.rooms_wrapper h6{
+    font-size: .875rem;
+    color: var(--primary-text);
+    margin-bottom: .9375rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+}
+.rooms_wrapper p{
+    font-size: 1rem;
+    color: var(--text-black);
+    line-height: 1.625rem;
+}
+.rooms_wrapper .section-title:after{
+    content: '';
+    background-image: url('../img/title-icon.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -0.9375rem;
+    height: .9375rem;
+}
+
+.rooms_wrapper .room-items{
+    position: relative;
+    overflow: hidden;
+}
+.rooms_wrapper .room-items img{
+    width: 100%;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover img{
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);;
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+.rooms_wrapper .room-items::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover::before{
+    opacity: 0.6;
+}
+.rooms_wrapper .room-item-wrap{
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.rooms_wrapper .room-items .room-content{
+    border: .125rem solid var(--bg-white);
+    padding: 5rem 1.875rem;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+}
+.rooms_wrapper .room-items:hover .room-content{
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    
+}
+/*Price*/
+.price_wrapper .card{
+    box-shadow: 0.125rem .25rem rgb(34, 30, 31 / 40%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.price_wrapper .card:hover{
+background-color: var(--secondary-color);
+}
+.price_wrapper .card:hover h3,
+.price_wrapper .card:hover h5,
+.price_wrapper .card:hover p{
+    color: var(--text-white);
+}
+.price_wrapper .card:hover .main-btn{
+    color: var(--text-white);
+    border-color: var(--bg-white);
+}
+
+
+/*  */
 
 @media screen and (min-width:992px) {
     #owl-demo-header .item{
