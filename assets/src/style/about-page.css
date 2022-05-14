@@ -60,3 +60,11 @@
 }
 
 
+/* Services content */
+.services-frame {
+    min-height: 260px;
+
+    background: linear-gradient(135deg, #48556380, #29323caa),
+    url(/assets/src/img/services/bg2.jpg) no-repeat center;
+    background-size: cover; 
+}
