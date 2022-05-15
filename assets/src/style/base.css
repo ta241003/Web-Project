@@ -401,6 +401,61 @@ img {
 }
 
 
+
+/* Service CSS */
+/* 6 Services */
+.service-item-wrap{
+    background-color:var(--bg-white);
+}
+
+.service-menu-area ul li a{
+    display: block;
+    margin-bottom: 2.8125rem;
+}
+
+.service-menu-area ul li a .service-icon{
+    height: 5.625rem;
+    width: 5.625rem;
+    background-color:var(--secondary-color);
+    line-height: 5.625rem;
+    text-align: center;
+    border-radius: 100%;
+    float: left;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-menu-area ul li a .service-icon:hover,
+.service-menu-area ul li a.active .service-icon{
+  background-color:var(--primary-color);
+  color:var(--text-white);
+  box-shadow:0.125rem rgb(34 30 31 / 40%);
+}
+.service-menu-area ul li:nth-child(1){
+  margin-left:0.5625rem;
+}
+.service-menu-area ul li:nth-child(2){
+ margin-left:-2.9375rem;
+}
+.service-menu-area ul li:nth-child(3){
+    margin-left:-6.375rem;
+}
+.service-menu-area ul li:nth-child(4){
+    margin-left:-8.8125rem;
+}
+
+.service-menu-area ul li a p,
+.service-menu-area ul li a h5{
+    padding-left: 6.875rem;
+    display: block;
+    text-align: left;
+}
+
+.service-menu-area ul li a p span{
+    color: var(--secondary-color);
+}
+
+
 .counter{
     background-image: url('../img/counter-bg.webp');
     background-position: center center;
