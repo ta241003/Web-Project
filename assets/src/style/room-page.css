@@ -189,6 +189,7 @@ h3 span{
     }
 }
 
+
 @media (max-width:991px){
     /* custom css */
     section {
@@ -586,5 +587,8 @@ background-color: var(--secondary-color);
     border-color: var(--bg-white);
 }
 
+.price-card-items {
+
+}
 
 /*  */
