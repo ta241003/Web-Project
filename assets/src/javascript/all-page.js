@@ -1,9 +1,3 @@
-// 
-var login_btn = document.getElementById('login-btn');
-var showForm = document.getElementById('form-account')
-login_btn.addEventListener('click', function () {
-    showForm.classList.toggle('show')
-});
 
 // counter design
 document.addEventListener ("DOMContentLoaded", () =>{
@@ -21,9 +15,10 @@ document.addEventListener ("DOMContentLoaded", () =>{
           }
       }, step);
   }
-  counter("count1",0  ,2003, 3000);
+  counter("count1",0  ,2000, 3000);
   counter("count2", 100, 5786, 2500);
   counter("count3", 0 ,3050, 3000);
   counter("count4", 0 , 7110, 3000);
 });
 
+  
