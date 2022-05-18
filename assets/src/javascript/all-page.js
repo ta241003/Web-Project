@@ -1,4 +1,3 @@
-
 // counter design
 document.addEventListener ("DOMContentLoaded", () =>{
     function counter (id, start, end, duration){
