@@ -35,6 +35,12 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+// close sign in
+function closeSignInForm(form) {
+    if(form == null) return;
+    form.classList.remove('active');
+}
+
 // open sign up form
 const openSignUp = document.querySelectorAll('[data-modal-target]');
 openSignUp.forEach(button => {
@@ -42,7 +48,7 @@ openSignUp.forEach(button => {
         const modal = document.querySelector(button.dataset.modalTarget);
         openModal(modal);
         const toCloseSignIn = button.closest('.modal_external');    
-        closeModal(toCloseSignIn);
+        closeSignInForm(toCloseSignIn);
     });
 });
 

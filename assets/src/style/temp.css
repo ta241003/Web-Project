@@ -147,6 +147,44 @@
   font-weight: 600;
 }
 
+/* Social icon */
+.con-wth-social{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  gap: .3rem;
+}
+.con-wth-social a {
+  text-decoration: none;
+  color: #fff;
+}
+.con-wth-social .item-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem;
+  background-color: #ffc107;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.con-wth-social .item-cont p {
+  margin-bottom: 0;
+  margin-left: .5rem;
+  color: #212529;
+  font-weight: 600;
+}
+.con-wth-social .item-cont .bi{
+  color: #212529;
+}
+.with-fb {
+
+}
+.with-ins{
+
+}
+
 /* Element */
 input[type="text"], 
 input[type="password"],
