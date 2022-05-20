@@ -51,7 +51,7 @@
         </ul>
         <!-- Form -->
         <div class="">
-          <button id="login-btn" type="button" class="btn btn-warning btn-nav-bar login-btn">
+          <button id="login-btn" data-modal-target="#openCusForm" type="button" class="btn btn-warning btn-nav-bar login-btn">
             <i class="bi bi-person-circle"></i>
             <b>Account</b>
           </button>
@@ -60,7 +60,41 @@
     </div>
   </nav>
   <!-- form account -->
+  <!-- login form -->
   <div id="openCusForm" class="row justify-content-md-center form-cont align-items-center ">
+    <div class="col-md-auto form-box">
+      <div class="form-top">
+        <div class="form-top-left">
+          <h3>Login to our site</h3>0
+        </div>
+        <div class="form-top-right">
+        <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
+        </div>
+      </div>
+        <div class="form-bottom">
+      <form role="form" action="" method="post" class="login-form">
+        <div class="form-group">
+          <label class="sr-only" for="form-username">Username</label>
+            <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="form-password">Password</label>
+            <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+          </div>
+          <button type="button" class="signIn-btn">Sign in</button>
+      </form>
+      <!-- forgot and sign up content -->
+      <div class="fg-sup-cont">
+        <a href="#" class="forgot">Forgot Password</a>
+        <a href="#" class="signUp-link">Sign Up</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- overlay -->
+  <div id="overlay" class="overlay"></div>
+  <!-- register form -->
+  <div id="openResForm" class="row justify-content-md-center form-cont align-items-center ">
     <div class="col-md-auto form-box">
       <div class="form-top">
         <div class="form-top-left">
@@ -86,13 +120,11 @@
       <!-- forgot and sign up content -->
       <div class="fg-sup-cont">
         <a href="#" class="forgot">Forgot Password</a>
-        <a href="#" class="signUp-link">Sign Up</a>
+        <a href="#" id="regis-link" class="signUp-link">Sign Up</a>
       </div>
     </div>
     </div>
   </div>
-  <!-- overlay -->
-  <div id="overlay"></div>
   <!-- Grid content computer tablet -->
   <section class="header customers" id="customers">
     <div class="sec-width">

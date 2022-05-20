@@ -6,8 +6,11 @@ openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget)
     openModal(modal);
+    console.log("dasd")
   })
 });
+
+
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.modal_external.active')
@@ -34,22 +37,3 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
-
-// open sign up form
-const openSignUp = document.querySelectorAll('[data-modal-target]');
-openSignUp.forEach(button => {
-    button.addEventListener('click', () =>{
-        const modal = document.querySelector(button.dataset.modalTarget);
-        openModal(modal);
-        const toCloseSignIn = button.closest('.modal_external');    
-        closeModal(toCloseSignIn);
-    });
-});
-
-const closeSignUp = document.querySelectorAll('[data-close-button]')
-closeSignUp.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const modal = button.closest('.modal_external_signUp')
-        closeModal(modal);
-    });
-});

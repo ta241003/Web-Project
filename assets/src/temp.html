@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Frammework boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/src/style/home-page.css">
+  <link rel="stylesheet" href="/assets/src/style/base.css">
+  <link rel="stylesheet" href="/assets/src/style/temp.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl carousel theme -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/src/img/logo-hotel.png" type="image/x-icon">
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- new -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 10;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Room</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Blog</a>
+          </li>
+          <!-- Form -->
+          <div class="  ">
+            <button id="login-btn" data-modal-target="#modal_external" type="button" class="btn btn-warning btn-nav-bar login-btn">
+              <i class="bi bi-person-circle"></i>
+              <b>Account</b>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- BODY -->
+
+  <div class="header">
+    <!-- Carousel -->
+    <div id="owl-demo-header" class="owl-carousel owl-theme carousel-header">
+      <div class="item item-1">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+      <div class="item item-2">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+      <div class="item item-3">
+        <form action="" class="content">
+          <h1>Content Header</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+    </div>
+  </div>
+  <div class="gap" style="text-align: center;margin-top:2rem">
+    <h1 style="text-transform: uppercase;font-weight:700">find <span style="color: red;">Room</span></h1>
+  </div>
+  <!-- Search form/mobile/tablet -->
+  <div class="container cont-search">
+    <div class="row">
+      <form class="d-flex searching-form">
+        <input class="form-control search-input me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-warning btn-fsearch" type="button">
+          <i class="bi bi-search" style="color: #212529;"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Blogs -->
+  <div class="fw-content top-content">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-2 fw-content">
+        <div class="col col-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        <div class="col img-cont-header">
+          <div class="row row-cols-1 row-cols-2">
+            <div class="col col-lft">
+              <img class=" img-lft" src="/assets/src/img/img-cont-item6.jpg" alt="">  
+              <img class=" img-lft" src="/assets/src/img/img-cont-item5.jpg" alt="">
+            </div>
+            <div class="col col-img">
+              <img class="img-fluid" src="/assets/src/img/img-cont-item4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GAP -->
+  <div class="gap"></div>
+  <!-- <button data-modal-target="#modal_external">Open Modal</button> -->
+  <!-- login form -->
+  <div class="modal_external" id="modal_external">
+    <div class="modal-header">
+      <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
+      <div class="title">Sign In</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <form class="modal-body">
+      <input type="text" class="items" placeholder="Username">
+      <input type="password" class="items" placeholder="Password">
+      <button type="submit" class="signIn-btn btn-warning btn items">Sign in</button>
+    </form>
+    <div class="fg-sup-cont">
+      <a href="#" class="forgt-pssw-link">Forgot Password</a>
+      <a href="#" data-modal-target="#modal_external_signUp" class="signUp-link">Sign Up</a>
+    </div>
+  </div>
+  <!-- sign up form -->
+  <div class="modal_external_signUp" id="modal_external_signUp">
+    <div class="modal-header-signUp">
+      <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
+      <div class="title">Sign Up</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <form class="modal-body-signUp">
+      <input type="text" class="items" placeholder="Username">
+      <input type="email" class="items" placeholder="Email">
+      <input type="text" class="items" placeholder="Phone Number">
+      <input type="password" class="items" placeholder="Password">
+      <input type="password" class="items" placeholder="Confirm Password">
+      <button type="submit" class="signIn-btn btn-warning btn items">Sign up</button>
+    </form>
+  </div>
+  <!-- overlay when calling pop up -->
+  <div id="overlay"></div>
+  <!-- GAP -->
+  <div class="gap"></div>
+  <div class="container-xxl main-cont-home">
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">Join <span style="color: red;">us</span></h1>
+    </div>
+    <div id="owl-demo" class="owl-carousel owl-theme near-bod">
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/temp.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card1.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="/assets/src/img/card2.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+  </div>
+  <!-- Video -->
+  
+  <div class="container-xxl">
+    <figure class="text-center align-self-center">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer" style="color: #d8b14e;">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- GAP -->
+  <div class="gap"></div>
+  
+  <div class="row"></div>
+  <!-- Blogs full width -->
+  <div class="fw-content last-content">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-2 fw-content">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-2">
+            <div class="col col-lft">
+              <img class=" img-lft" src="/assets/src/img/img-cont-item1.jpg" alt="">
+              <img class=" img-lft" src="/assets/src/img/img-cont-item3.jpg" alt="">
+            </div>
+            <div class="col col-img">
+              <img class="img-fluid" src="/assets/src/img/img-cont-item2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col col-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste nemo optio illum ratione sit eaque dolor!
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact form sub content -->
+  <div class="fw-content contact-content">
+    <div class="container">
+      <div class="block-outer">
+        <div class="block-inner"></div>
+      </div>
+      <h3>Find out <br> how can we help you</h3>
+      <button class="btn-contact-end" style="color: #fff;">Contact us</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <a class="navbar-brand img-footer" href="#">
+          <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
+        </a>
+      </div>
+      <div class="row  row-cols-sm-2 row-cols-md-4">
+        <div class="col first-footer">
+          <h3 class="tilte-footer blockquote-footer">join us</h3>
+          <p style="max-width: 198px;">Join with us and have your best holiday</p>
+          <!-- Payments Partners -->
+          <h3 class="tilte-footer blockquote-footer">Partners</h3>
+          <ul class="pm-pn-cont">
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/payment-partner1.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-2.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-3.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-4.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-5.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-6.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-7.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="/assets/src/img/pm-pn-8.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">Download</h3>
+          <ul class="dl-cont">
+            <li class="dl-item">
+              <img src="/assets/src/img/dl-img-1.jpg" alt="download-img" width="150" class="img-fluid">
+            </li>
+            <li class="dl-item">
+              <img src="/assets/src/img/dl-img-2.jpg" alt="download-img" width="150" class="img-fluid">
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">useful links</h3>
+          <nav class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active useful-links-item" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="#">Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="#">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="#">Blog</a>
+            </li>
+          </nav>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">contact</h3>
+          <!-- CONTACT CONTENT -->
+          <h6><b>TEL:</b> <span class="sub-content">000-000-000</span></h6>
+          <p><b>Address:</b> <span class="sub-content">bembem</span></p>
+          <!-- CONTACT ICON -->
+          <ul class="contact-item">
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram item-item-contact"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter item-item-contact"></i></a></li>
+            <li><a href=""><i class="bi bi-github item-item-contact"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center ls-ft-text">Copyright © 2022 DDD hotel</div>
+  </footer>
+  <!-- SCRIPT WITH BOOSTRAPS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <!-- SCRIPT -->
+  <script src="/assets/src/javascript/script.js"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 1. Owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="assets/owl-carousel/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+  <script>
+    $('.near-bod').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false
+    });
+    // header
+    $('.carousel-header').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      dots: false
+    });
+    
+  </script>
+</body>
+
+</html>

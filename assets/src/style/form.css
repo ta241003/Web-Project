@@ -4,7 +4,6 @@
   overflow: hidden;
   border: 2px solid #e89a3e;
   animation: formAni .2s ease-in;
-  z-index: 10;
 }
 
 @keyframes formAni {
@@ -19,6 +18,7 @@
 #overlay {
   display: none;
   position: fixed;
+  /* z-index: 2; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -27,14 +27,12 @@
 }
 
 .form-cont{
-  display: none;
-  z-index: 1;
+  /* display: none; */
+  z-index: 30;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form-top {
@@ -42,12 +40,6 @@
 	padding: 0 25px 15px 25px;
 	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 	text-align: left;
-}
-
-.form-top-left {
-	float: left;
-	width: 75%;
-	padding-top: 25px;
 }
 .fg-sup-cont {
   margin-top: 12px;
@@ -96,6 +88,10 @@
 
 .showPopUp {
   display: flex;
+}
+
+.showOverlay {
+  display: block;
 }
 
 
