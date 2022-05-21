@@ -59,3 +59,12 @@ closeSignUp.forEach(button =>{
         closeModal(modal);
     });
 });
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal_external_signUp.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  });
+});
+
+// contact form
