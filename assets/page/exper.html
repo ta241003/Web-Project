@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Frammework boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl carousel theme -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <!-- Favicon -->
+  <link rel="icon" href="http://lab.finalterm.online/img/logo-hotel.png" type="image/x-icon">
+  <title>Service</title>
+</head>
+
+<body>
+  <style>
+    /*about css*/
+    /* Head */
+    .header {
+      background:
+        linear-gradient(135deg, #48556380, #29323c),
+        url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center;
+      background-size: cover;
+      min-height: 300px;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .header h1 {
+      text-transform: uppercase;
+    }
+
+    .header button {
+      width: 175px;
+      height: auto;
+      border: 2px solid #ffcd4d;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffcd4d;
+      background-color: transparent;
+      padding: 0.3rem 1rem;
+    }
+
+    .header button:hover {
+      transition: .3s;
+      background-color: #212529;
+    }
+
+    /* Body */
+    /* Reponsive here */
+    @media screen and (min-width:992px) {
+      .header {
+        height: 600px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 89%, 57% 94%, 0% 100%);
+      }
+
+      .img-header {
+        clip-path: polygon(0 0, 92% 0, 75% 100%, 0% 100%);
+      }
+
+      .img-content-2 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
+      }
+    }
+
+    @media screen and (min-width:577px) {
+      .header {
+        font-size: 1.1rem;
+      }
+    }
+
+    .card-img-top:hover {
+      transition: 0.8s;
+      transform: scale(1.5);
+    }
+
+    .img-cont {
+      overflow: hidden;
+    }
+
+    /*base css*/
+    /* Variable */
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-gray-100: #f8f9fa;
+      --bs-gray-200: #e9ecef;
+      --bs-gray-300: #dee2e6;
+      --bs-gray-400: #ced4da;
+      --bs-gray-500: #adb5bd;
+      --bs-gray-600: #6c757d;
+      --bs-gray-700: #495057;
+      --bs-gray-800: #343a40;
+      --bs-gray-900: #212529;
+      --bs-primary: #0d6efd;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-primary-text: #d8b14e;
+      --bs-primary-rgb: 13, 110, 253;
+      --bs-secondary-rgb: 108, 117, 125;
+      --bs-success-rgb: 25, 135, 84;
+      --bs-info-rgb: 13, 202, 240;
+      --bs-warning-rgb: 255, 193, 7;
+      --bs-danger-rgb: 220, 53, 69;
+      --bs-light-rgb: 248, 249, 250;
+      --bs-dark-rgb: 33, 37, 41;
+      --bs-white-rgb: 255, 255, 255;
+      --bs-black-rgb: 0, 0, 0;
+      --bs-body-color-rgb: 33, 37, 41;
+      --bs-body-bg-rgb: 255, 255, 255;
+    }
+
+    /* Reponsive */
+
+    @media screen and (min-width: 991px) {
+      .login-btn {
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (min-width: 200px) {
+      .login-btn {
+        width: 100%;
+      }
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .gap {
+      width: 100%;
+      height: 40px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    /* Navigation */
+    .nav-item a {
+      color: var(--bs-white);
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .nav-pills .nav-link.active,
+    .btn-nav-bar {
+      background-color: var(--bs-primary-text);
+    }
+
+    /* HEADER */
+    .header {
+      margin-top: 89px;
+    }
+
+    /* Main Cont */
+    .main-cont {
+      /* margin-top: 105px; */
+    }
+
+    /* Image */
+    img {
+      object-fit: cover;
+    }
+
+    .btn {
+      background-color: var(--bs-primary-text);
+    }
+
+    /* Form Account */
+    .form-account {
+      /* position: relative; */
+      position: absolute;
+      z-index: 1000;
+      top: 89px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1em;
+      background-color: var(--bs-white);
+      display: none;
+    }
+
+    /* Show form */
+    .show {
+      display: block;
+    }
+
+    /* Footer */
+    .footer {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      background: var(--bs-dark);
+      color: var(--bs-white);
+      padding: 1rem 0;
+    }
+
+    .tilte-footer {
+      margin-top: 15px;
+      text-transform: uppercase;
+      color: var(--bs-primary-text);
+    }
+
+    .first-footer {
+      min-width: 165px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item-item-contact {
+      margin-left: 12px;
+      cursor: pointer;
+    }
+
+    .useful-links-item:hover {
+      color: var(--bs-white);
+    }
+
+    .useful-link {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ICON */
+    .bi {
+      font-size: 1.5rem;
+      color: var(--bs-primary-text);
+    }
+
+    .login-btn {
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      place-content: center;
+      place-items: center;
+    }
+
+    .login-btn .bi {
+      font-size: 1.2rem;
+      margin-right: 5px;
+      color: var(--bs-dark);
+    }
+
+    .img-footer {
+      /* margin-bottom: 50px; */
+    }
+
+    .sub-content {
+      color: #888888;
+    }
+
+    .pm-pn-cont {
+      max-width: 180px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.5em;
+    }
+
+    .pm-pn-item {
+      padding: 0.6rem;
+      max-width: 100px;
+      height: 50px;
+      border-radius: 2px;
+      background-color: var(--bs-white);
+    }
+
+    .dl-item {
+      max-width: 150px;
+      max-height: 60px;
+    }
+
+    .dl-item img {
+      width: 100%;
+      height: 100%;
+      column-gap: 1em;
+    }
+
+    .ls-ft-text {
+      color: var(--bs-gray);
+    }
+
+    /* Carousel */
+    #owl-demo .item {
+      /* margin: 3px; */
+    }
+
+    #owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* header carousel */
+    #owl-demo-header .item img {
+      display: block;
+      width: 100%;
+      min-height: 300px;
+    }
+
+    #owl-demo-header .item {
+      min-height: 260px;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .item-1 {
+      background: linear-gradient(135deg, #48556380, #29323caa),
+        url('/assets/src/img//img-card2.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    .item-2 {
+      background: linear-gradient(135deg, #48556380, #29323caa),
+        url('/assets/src/img/head-home.jpg') no-repeat center;
+      background-size: cover;
+
+    }
+
+    .item-3 {
+      background: linear-gradient(135deg, #48556380, #29323caa),
+        url('/assets/src/img/img-header.jpg') no-repeat center;
+      background-size: cover;
+
+    }
+
+    .header h1 {
+      text-transform: uppercase;
+    }
+
+    .header button {
+      width: 175px;
+      height: auto;
+      border: 2px solid #ffcd4d;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffcd4d;
+      background-color: transparent;
+      padding: 0.3rem 1rem;
+    }
+
+    .header button:hover {
+      transition: .3s;
+      background-color: #212529;
+    }
+
+    @media screen and (min-width:992px) {
+      #owl-demo-header .item {
+        height: 560px;
+      }
+    }
+  </style>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
+    <div class="container">
+      <a class="navbar-brand" href="http://lab.finalterm.online">
+        <img src="http://lab.finalterm.online/img/logo-hotel.png" class="img-fluid" width="80" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="http://lab.finalterm.online/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="http://lab.finalterm.online/room.html">Room</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Experiences</a>
+          </li>
+        </ul>
+        <!-- Form -->
+        <div class="  ">
+          <button id="login-btn" type="button" class="btn btn-warning btn-nav-bar login-btn">
+            <i class="bi bi-person-circle"></i>
+            <b>Account</b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div class="header">
+    <form action="" class="content">
+      <h1>Content Header</h1>
+      <p>A well-known quote, contained in a blockquote element</p>
+      <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+      <button type="submit">Click Here</button>
+    </form action="">
+  </div>
+  <div class="container main-cont">
+    <!-- Content 1 -->
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">About <span style="color: red;">us</span></h1>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 shape-divide-item">
+      <div class="col">
+        <img src="http://lab.finalterm.online/img/img-hotel.jpg" class="img-fluid img-header" alt="">
+      </div>
+      <div class="col header-quote align-self-center">
+        <figure>
+          <blockquote class="blockquote">
+            <h4>A well-known quote, contained in a blockquote element.</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #d8b14e;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content Middle 2 & 3 -->
+    <!-- TEXT -->
+    <div class="row row-cols-1 content-1">
+      <figure class="text-center align-self-center">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: #d8b14e;">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content 3 -->
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col align-self-center">
+        <figure>
+          <blockquote class="blockquote">
+            <h4>A well-known quote, contained in a blockquote element.</h4>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #d8b14e;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <img src="http://lab.finalterm.online/img/room-content.jpg" class="img-fluid img-content-2" alt="">
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Content 4 -->
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">Join <span style="color: red;">us</span></h1>
+    </div>
+    <div id="owl-demo" class="owl-carousel owl-theme near-bod">
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="http://lab.finalterm.online/img/temp.jpg"
+              alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="http://lab.finalterm.online/img/card1.jpg"
+              alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card">
+          <div class="img-cont"><img class="card-img-top" src="http://lab.finalterm.online/img/card2.jpg"
+              alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#card2" class="btn btn-warning">Join us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GAP -->
+    <div class="gap"></div>
+    <!-- Blog -->
+    <!-- Title -->
+    <div class="gap" style="text-align: center;margin-bottom:2rem">
+      <h1 style="text-transform: uppercase;font-weight:700">Blogs</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card1.jpg" class="card-img-top" alt="card1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card2.jpg" class="card-img-top" alt="card2">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card3.jpg" class="card-img-top" alt="card3">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card">
+          <div class="img-cont">
+            <img src="http://lab.finalterm.online/img/card4.jpg" class="card-img-top" alt="card4">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GAP -->
+  <div class="gap"></div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <a class="navbar-brand img-footer" href="#">
+          <img src="http://lab.finalterm.online/img/logo-hotel.png" class="img-fluid" width="80" alt="">
+        </a>
+      </div>
+      <div class="row  row-cols-sm-2 row-cols-md-4">
+        <div class="col first-footer">
+          <h3 class="tilte-footer blockquote-footer">join us</h3>
+          <p style="max-width: 198px;">Join with us and have your best holiday</p>
+          <!-- Payments Partners -->
+          <h3 class="tilte-footer blockquote-footer">Partners</h3>
+          <ul class="pm-pn-cont">
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/payment-partner1.jpg" width="60" class="img-fluid"
+                alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-2.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-3.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-4.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-5.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-6.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-7.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+            <li class="pm-pn-item">
+              <img src="http://lab.finalterm.online/img/pm-pn-8.jpg" width="60" class="img-fluid" alt="pm-partner">
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">Download</h3>
+          <ul class="dl-cont">
+            <li class="dl-item">
+              <img src="http://lab.finalterm.online/img/dl-img-1.jpg" alt="download-img" width="150"
+                class="img-fluid">
+            </li>
+            <li class="dl-item">
+              <img src="http://lab.finalterm.online/img/dl-img-2.jpg" alt="download-img" width="150"
+                class="img-fluid">
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">useful links</h3>
+          <nav class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="http://lab.finalterm.online">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="http://lab.finalterm.online/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link useful-links-item" aria-current="page" href="http://lab.finalterm.online/room.html">Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active useful-links-item" aria-current="page" href="#">Experiences</a>
+            </li>
+          </nav>
+        </div>
+        <div class="col">
+          <h3 class="tilte-footer blockquote-footer">contact</h3>
+          <!-- CONTACT CONTENT -->
+          <h6><b>TEL:</b> <span class="sub-content">000-000-000</span></h6>
+          <p><b>Address:</b> <span class="sub-content">bembem</span></p>
+          <!-- CONTACT ICON -->
+          <ul class="contact-item">
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram item-item-contact"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter item-item-contact"></i></a></li>
+            <li><a href=""><i class="bi bi-github item-item-contact"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center ls-ft-text">Copyright © 2022 DDD hotel</div>
+  </footer>
+  <!-- SCRIPT WITH BOOSTRAPS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <!-- SCRIPT -->
+  <script src="/http://lab.finalterm.online//javascript/all-page.js"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 1. Owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="assets/owl-carousel/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+  <script>
+    // scripting carousel by jquery
+    $('.near-bod').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false
+    })
+  </script>
+</body>
+
+</html>

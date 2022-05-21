@@ -1,6 +1,8 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const closeSignUp = document.querySelectorAll('[data-close-button]')
+const openSignUp = document.querySelectorAll('[data-modal-target]');
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -42,7 +44,6 @@ function closeSignInForm(form) {
 }
 
 // open sign up form
-const openSignUp = document.querySelectorAll('[data-modal-target]');
 openSignUp.forEach(button => {
     button.addEventListener('click', () =>{
         const modal = document.querySelector(button.dataset.modalTarget);
@@ -52,7 +53,6 @@ openSignUp.forEach(button => {
     });
 });
 
-const closeSignUp = document.querySelectorAll('[data-close-button]')
 closeSignUp.forEach(button =>{
     button.addEventListener('click', ()=>{
         const modal = button.closest('.modal_external_signUp')
