@@ -12,7 +12,7 @@ const mailOptions = {
   from: "cunho2803032003@gmail.com",
   to: "nbao332@gmail.com", // textfield for email not static data
   subject: "Testing",
-  text: "Sent from node js"
+  text: "hello i'm from node js sent to MF"
 };
 
 
