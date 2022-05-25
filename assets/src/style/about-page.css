@@ -285,7 +285,7 @@ background-color: var(--secondary-color);
     place-content: center;
     text-align: center;
 }
-.direct-newpage-cont h1 {
+.direct-newpage-cont h3 {
     text-transform: uppercase;
 }
 .direct-newpage-cont button {
