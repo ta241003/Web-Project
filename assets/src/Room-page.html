@@ -57,7 +57,7 @@
             <a class="nav-link" aria-current="page" href="#">Experiences</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Blog</a>
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
           </li>
         </ul>
         <!-- Form -->
@@ -70,66 +70,50 @@
       </div>
     </div>
   </nav>
-
-  <!--Rooms-->
-  <!-- <section id="rooms" class="rooms_wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 section-title text-center mb-5">
-          <h6>What we can do for you</h6>
-          <h3 style="text-transform: uppercase;font-weight:700">Our Special Rooms</h3>
-        </div>
+  <!-- Header Carousel -->
+  <div class="header">
+    <!-- Carousel -->
+    <div id="owl-demo-header" class="owl-carousel owl-theme carousel-header">
+      <div class="item item-1">
+        <form action="" class="content">
+          <h1>Welcome to our services</h1>
+          <p>Here we get any thing you want in your vacation</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
       </div>
-      <div class="row m-0">
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="/assets/src/img/hotel1.jpg" class="img-fluid">
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Single Room</h5>
-                <p class="text-white">One bed for up to 2 people, TV, air conditioner, bathroom</p>
-                <p class="text-white fw-bold mt-lg-4">$50 / Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="/assets/src/img/hotel2.jpg" class="img-fluid">
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Double Room</h5>
-                <p class="text-white">Two beds for up to 4 people, cool swimming pool view</p>
-                <p class="text-white fw-bold mt-lg-4">$150 / Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-lg-0">
-          <div class="room-items">
-            <img src="/assets/src/img/hotel3.jpg" class="img-fluid">
-            <div class="room-item-wrap">
-              <div class="room-content">
-                <h5 class="text-white mb-lg-5 text-decoration-underline">Junior Suite Room</h5>
-                <p class="text-white">The room has a private balcony with sun loungers</p>
-                <p class="text-white fw-bold mt-lg-4">$300 / Per Night</p>
-                <a class="main-btn border-white text-white mt-lg-5" href="#">Book now</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="item item-2">
+        <form action="" class="content">
+          <h1>See more our's services</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
+      </div>
+      <div class="item item-3">
+        <form action="" class="content">
+          <h1>Make your decision</h1>
+          <p>A well-known quote, contained in a blockquote element</p>
+          <figcaption class="blockquote-footer" style="color: #ffcd4d;">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+          <button type="submit">Click Here</button>
+        </form action="">
       </div>
     </div>
-  </section> -->
+  </div>
+  <!--Rooms-->
   <br><br><br><br><br><br>
   <div class="container">
-    <div class="row owl-carousel owl-theme near-bod" id="owl-demo">
+    <div class="row owl-carousel owl-theme room-carousel" id="owl-demo">
       <!-- item 1 -->
       <div class="item">
         <div class="col room-wrapper">
-          <div class="card card-bg">
+          <div class="card card-bg item-room-1">
             <div class="card-body">
               <div class="block-content">
                 <h1 class="card-title">Single Room</h1>
@@ -145,7 +129,7 @@
       <!-- item 2 -->
       <div class="item">
         <div class="col room-wrapper">
-          <div class="card card-bg">
+          <div class="card card-bg item-room-2">
             <div class="card-body">
               <div class="block-content">
                 <h1 class="card-title">Double Room</h1>
@@ -161,7 +145,7 @@
       <!-- item 3 -->
       <div class="item">
         <div class="col room-wrapper">
-          <div class="card card-bg">
+          <div class="card card-bg item-room-3">
             <div class="card-body">
               <div class="block-content">
                 <h1 class="card-title">View Room</h1>
@@ -483,7 +467,6 @@
     <hr>
     <div class="text-center ls-ft-text">Copyright © 2022 DDD hotel</div>
   </footer>
-
   <!-- Bootstrap5JS CDN Links -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
@@ -529,6 +512,44 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
+    });
+    $('.room-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+    });
+    $('.carousel-header').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      dots: false
     });
   </script>
 </body>

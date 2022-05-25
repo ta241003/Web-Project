@@ -345,7 +345,7 @@ section {
     cursor: pointer;
 }
 .price_wrapper .card:hover {
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, #70e1f5, #ffd194);
 }
 .price_wrapper .card:hover h3,
 .price_wrapper .card:hover h5,
@@ -353,8 +353,9 @@ section {
     color: var(--text-white);
 }
 .price_wrapper .card:hover .main-btn {
-    color: var(--text-white);
-    border-color: var(--bg-white);
+    color: var(--text-black);
+    border-color: var(--bg-black);
+    background-color: var(--bg-white);
 }
 
 /* Navigation */
@@ -596,24 +597,12 @@ section {
     min-height: 400px;
     display: grid;
     place-content: center;
-    text-align: center;
     padding: 0 2rem;
 }
 .card-bg {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/src/img/card2.jpg") no-repeat; */
     min-height: 435px;
     overflow: hidden;
     color: #fff;
-}
-.card-bg:nth-child(1) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/src/img/card2.jpg") no-repeat;
-    background-size: cover;
-
-}
-.card-bg:nth-child(2) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/src/img/card1.jpg") no-repeat;
-    background-size: cover;
-    
 }
 .room-wrapper {
 }
@@ -639,4 +628,19 @@ section {
 .block-content .book-btn:hover {
     background-color: #000;
     transition: .3s;
+}
+.item-room-1 {
+    background: linear-gradient(135deg, #48556380, #000000aa),
+    url('/assets/src/img/card4.jpg') no-repeat center;
+    background-size: cover;
+}
+.item-room-2 {
+    background: linear-gradient(135deg, #48556380, #000000aa),
+    url('/assets/src/img/header.jpg') no-repeat center;
+    background-size: cover;
+}
+.item-room-3 {
+    background: linear-gradient(135deg, #48556380, #000000aa),
+    url('/assets/src/img/card3.jpg') no-repeat center;
+    background-size: cover;
 }

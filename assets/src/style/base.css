@@ -248,7 +248,7 @@ img {
 }
 .item-1 {
     background: linear-gradient(135deg, #48556380, #29323caa),
-    url('/assets/src/img//img-card2.jpg') no-repeat center;
+    url('/assets/src/img/img-card2.jpg') no-repeat center;
     background-size: cover;
 }
 .item-2 {
