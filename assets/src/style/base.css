@@ -62,7 +62,7 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar{
-    width: 0.7em;
+    width: 0.4em;
 }
 
 ::-webkit-scrollbar-track{
@@ -290,4 +290,36 @@ img {
     #owl-demo-header .item{
         height: 560px;
     }
+}
+
+/* full width */
+.fw-content {
+    padding: 2.5rem 0;
+    background-color: #ffcd4d;
+}
+@media screen and (max-width:1000px) {
+    @media screen and (max-width:450px){
+        .btn-contact-end {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .contact-sub-cont h3 {
+            text-align: center;
+        }
+    }
+}
+@media screen and (min-width:450px) {
+    .btn-contact-end {
+        clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+    }
+    
+}
+/*  */
+.btn-contact-end {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    border: none;
+    min-width: 100px;
+    padding: 0.3rem 0.5rem;
+    background: #212529;
 }
