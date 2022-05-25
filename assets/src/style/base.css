@@ -94,46 +94,6 @@
     }
 }
 
-/* Test Responsive */
-@media (max-width: 1308px) {
-    /* service */
-    .service-item-wrap .tab-content img{
-        width: 100%;
-    }
-    
-    .service-menu-area ul li a{
-        margin-bottom: 8125rem;
-        overflow: hidden;
-    }
-    .service-menu-area ul li:nth-child(1){
-        margin-left:-4.4375rem;
-    }
-    .service-menu-area ul li:nth-child(2){
-        margin-left:-6.9375rem;
-    }
-    .service-menu-area ul li:nth-child(3){
-        margin-left:-9.375rem;
-    }
-    .service-menu-area ul li:nth-child(4){
-        margin-left:-12.8125rem;
-    }
-    .service-menu-area ul li a h5{
-        margin-bottom:.375rem;
-    }
-}
-
-@media (max-width:990px){
-    /* services*/
-    .service-menu-area{
-    padding:1.5rem 0.5rem;
-    }
-    .service-menu-area ul li{
-    margin-left:unset !important;
-    }
-    .service-item-wrap .tab-content img{
-        height: 100%;
-    }
-}
 body {
     padding: 0;
     margin: 0;

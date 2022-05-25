@@ -12,21 +12,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- CSS file link -->
   <link rel="stylesheet" href="/assets/src/style/room-page.css">
+  <link rel="stylesheet" href="/assets/src/style/base.css">
   <!-- Favicon -->
   <link rel="icon" href="http://lab.finalterm.online/img/logo-hotel.png" type="image/x-icon">
   <!-- Icon Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
-   <!-- Carousel -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-   integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-   crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- Owl carousel theme -->
- <link rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-   integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-   crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
- <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl carousel theme -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
   <title>Room</title>
 </head>
 
@@ -71,8 +72,8 @@
   </nav>
 
   <!--Rooms-->
-  <section id="rooms" class="rooms_wrapper">
-    <div class="container-fluid">
+  <!-- <section id="rooms" class="rooms_wrapper">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12 section-title text-center mb-5">
           <h6>What we can do for you</h6>
@@ -121,7 +122,60 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <br><br><br><br><br><br>
+  <div class="container">
+    <div class="row owl-carousel owl-theme near-bod" id="owl-demo">
+      <!-- item 1 -->
+      <div class="item">
+        <div class="col room-wrapper">
+          <div class="card card-bg">
+            <div class="card-body">
+              <div class="block-content">
+                <h1 class="card-title">Single Room</h1>
+                <p class="card-text">One bed for up to 2 people, TV, air conditioner, bathroom</p>
+                <p class="text-white fw-bold mt-lg-4">$50 / Per Night</p>
+                <br>
+                <button class="book-btn">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div class="item">
+        <div class="col room-wrapper">
+          <div class="card card-bg">
+            <div class="card-body">
+              <div class="block-content">
+                <h1 class="card-title">Double Room</h1>
+                <p class="card-text">Two beds for up to 4 people, cool swimming pool view</p>
+                <p class="text-white fw-bold mt-lg-4">$150 / Per Night</p>
+                <br>
+                <button  class="book-btn">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- item 3 -->
+      <div class="item">
+        <div class="col room-wrapper">
+          <div class="card card-bg">
+            <div class="card-body">
+              <div class="block-content">
+                <h1 class="card-title">View Room</h1>
+                <p class="card-text">The room has a private balcony with sun loungers</p>
+                <p class="text-white fw-bold mt-lg-4">$300 / Per Night</p>
+                <br>
+                <button  class="book-btn">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- GAP -->
   <div class="gap"></div>
   <!-- GAP -->
@@ -445,38 +499,38 @@
     crossorigin="anonymous"></script>
   <!-- SCRIPT -->
   <script src="/assets/src/javascript/all-page.js"></script>
- <!-- Jquery -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
- integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
- crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- 1. Owl -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
- integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
- crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="jquery-1.9.1.min.js"></script>
-<script src="assets/owl-carousel/owl.carousel.js"></script>
-<!-- Owl Carousel -->
-<script>
- $('.near-bod').owlCarousel({
-   loop: true,
-   margin: 10,
-   nav: false,
-   responsive: {
-     0: {
-       items: 1
-     },
-     600: {
-       items: 2
-     },
-     1000: {
-       items: 3
-     }
-   },
-   autoplay: true,
-   autoplayTimeout: 5000,
-   autoplayHoverPause: false
- });
-</script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 1. Owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="assets/owl-carousel/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+  <script>
+    $('.near-bod').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      },
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+    });
+  </script>
 </body>
 
 </html>

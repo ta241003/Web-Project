@@ -6,11 +6,12 @@ require('dotenv').config(); // include env file
 const app = express();
 
 
-app.use(express.json());
+app.use(express.json()); 
 app.use(cors());
 app.use("/assets/src", express.static('src')); // use static file
-app.post('/contact', encoder, (req, res) => {
+app.post('/', encoder, (req, res) => {
     var email = req.body.email;
+    console.log(email);
     res.redirect('/');
 });
 
