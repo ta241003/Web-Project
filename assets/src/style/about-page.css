@@ -273,3 +273,33 @@ background-color: var(--secondary-color);
     color: var(--text-white);
     border-color: var(--bg-white);
 }
+/* direct section */
+.direct-newpage-cont {
+    min-height: 300px;
+    color: #fff;
+    background: 
+    linear-gradient(135deg, #48556380, #29323ca0),
+    url('/assets/src//img/counter-bg.jpg') no-repeat center; 
+    background-position: center;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.direct-newpage-cont h1 {
+    text-transform: uppercase;
+}
+.direct-newpage-cont button {
+    width: 175px;
+    height: auto;
+    border: 2px solid #ffcd4d;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffcd4d;
+    background-color: transparent;
+    padding: 0.3rem 1rem;
+}
+.direct-newpage-cont button:hover {
+    transition: .3s;
+    background-color: #212529;
+}
