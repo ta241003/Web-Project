@@ -32,12 +32,12 @@ function send(email) {
     form: process.env.EMAIL,
     to: email, // textfield for email not static data
     subject: "Testing",
-    text: "hello i'm from node js sent to MF",
+    text: "hello i'm from node js sent to MF", // sont84554@gmail.com
   };
 
   transporter.sendMail(mailOptions, (err, success) => {
     if (err) console.log(err);
-    else console.log("Send email successfully");
+    else console.log("Send email successfully");  
   });
 }
 
