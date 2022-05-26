@@ -33,7 +33,7 @@
 <body>
   <!-- new -->
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 20;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
@@ -58,7 +58,8 @@
           </li>
           <!-- Form -->
           <div class="">
-            <button id="login-btn" data-modal-target="#modal_external" type="button" class="btn btn-warning btn-nav-bar login-btn">
+            <button id="login-btn" data-modal-target="#modal_external" type="button"
+              class="btn btn-warning btn-nav-bar login-btn">
               <i class="bi bi-person-circle"></i>
               <b>Account</b>
             </button>
@@ -85,7 +86,7 @@
     </div>
   </div>
   <!-- sign up form -->
-  <div class="modal_external_signUp" id="modal_external_signUp">
+  <div class="modal_external_signUp" id="modal_external_signUp" style="z-index:100 ;">
     <div class="modal-header-signUp">
       <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
       <div class="title">Sign Up</div>
@@ -168,12 +169,12 @@
       <div class="row row-cols-1 row-cols-md-2 g-2 fw-content-first">
         <div class="col col-content">
           <p>'' STAY STRONG, BE HAPPY, BE HEALTHY WITH DDD ''. <br>
-            As always, we will be glad to welcome you with the best service.</p> 
+            As always, we will be glad to welcome you with the best service.</p>
         </div>
         <div class="col img-cont-header">
           <div class="row row-cols-1 row-cols-2">
             <div class="col col-lft">
-              <img class=" img-lft" src="/assets/src/img/home-bg_1.jpg" alt="">  
+              <img class=" img-lft" src="/assets/src/img/home-bg_1.jpg" alt="">
               <img class=" img-lft" src="/assets/src/img/beach-home.jpg" alt="">
             </div>
             <div class="col col-img">
@@ -241,7 +242,7 @@
   </div>
   <!-- GAP -->
   <div class="gap"></div>
-  
+
   <div class="row"></div>
   <!-- Blogs full width -->
   <div class="fw-content-second last-content">
@@ -264,13 +265,23 @@
       </div>
     </div>
   </div>
-  <!-- Contact form sub content -->
-  <div class="fw-content contact-content">
-    <div class="container contact-sub-cont">
-      <h3>Find out <br> how can we help you</h3>
-      <button class="btn-contact-end" style="color: #fff;">Contact us</button>
+  <section class="contact-form">
+    <div class="contact-container">
+      <h3 style="font-weight: 600;">Contact us</h3>
+      <p>
+        To get more information, Please enter your email. Thank you!
+      </p>
+      <div class="">
+        <form action="/contact" class="contact-content">
+          <div class="contact-sub">
+            <!-- <i class="bi bi-chat-square-fill"></i> -->
+            <input type="email" name="email" class="contact-sub-cont" placeholder="Enter your email">
+            <input type="button" value="Contact" class="btn-contact-end">
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -418,7 +429,7 @@
       autoplayHoverPause: false,
       dots: false
     });
-    
+
   </script>
 </body>
 
