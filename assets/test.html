@@ -74,7 +74,7 @@
   <div class="header cont-contact">
     <div class="container contact">
       <br><br><br><br>
-      <form class="contact-form">
+      <form action="/contact" class="contact-form" method="POST">
         <input type="email" name="email" id="email" placeholder="Your Email">
         <div class="gap"></div>
         <button type="submit" value="send message" class="submit" id="submitEmail">Submit</button>
@@ -106,11 +106,11 @@
       <div class="title">Sign Up</div>
       <button data-close-button class="close-button">&times;</button>
     </div>
-    <form class="modal-body-signUp">
-      <input type="email" class="items" placeholder="Email">
-      <input type="text" class="items" placeholder="Phone Number">
-      <input type="text" class="items" placeholder="Username">
-      <input type="password" class="items" placeholder="Password">
+    <form action="/signUp" method="POST" class="modal-body-signUp">
+      <input type="email" name="email" class="items" placeholder="Email">
+      <input type="text" name="phone" class="items" placeholder="Phone Number">
+      <input type="text" name="username" class="items" placeholder="Username">
+      <input type="password" name="password" class="items" placeholder="Password">
       <input type="password" class="items" placeholder="Confirm Password">
       <button type="submit" class="signIn-btn btn-warning btn items">Sign up</button>
     </form>
