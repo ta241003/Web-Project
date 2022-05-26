@@ -58,26 +58,22 @@
     --text-black: #151515;
     --text-gray: #e4e4e4;
 }
-
-/* Scrollbar */
-
-::-webkit-scrollbar {
-    width: 0.7em;
+/* header */
+.item-r-1 {
+    background: linear-gradient(135deg, #48556380, #29323caa),
+    url('/assets/src/img/card1.jpg') no-repeat center;
+    background-size: cover;
 }
-
-::-webkit-scrollbar-track {
-    background: #f8f8f8;
+.item-r-2 {
+    background: linear-gradient(135deg, #48556380, #29323caa),
+    url('/assets/src/img/card2.jpg') no-repeat center;
+    background-size: cover;
 }
-
-::-webkit-scrollbar-thumb {
-    background: #d6a45e;
-    border-radius: 150vh;
+.item-r-3 {
+    background: linear-gradient(135deg, #48556380, #29323c3e),
+    url('/assets/src/img/card3.jpg') no-repeat center;
+    background-size: cover;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: #bb863d;
-}
-/*  */
 
 section {
     padding: 3.125rem 0;
@@ -630,17 +626,17 @@ section {
     transition: .3s;
 }
 .item-room-1 {
-    background: linear-gradient(135deg, #48556380, #000000aa),
-    url('/assets/src/img/card4.jpg') no-repeat center;
+    background: linear-gradient(135deg, #48556380, #00000048),
+    url('/assets/src/img/card1.jpg') no-repeat center;
     background-size: cover;
 }
 .item-room-2 {
-    background: linear-gradient(135deg, #48556380, #000000aa),
-    url('/assets/src/img/header.jpg') no-repeat center;
+    background: linear-gradient(135deg, #48556380, #00000048),
+    url('/assets/src/img/card2.jpg') no-repeat center;
     background-size: cover;
 }
 .item-room-3 {
-    background: linear-gradient(135deg, #48556380, #000000aa),
+    background: linear-gradient(135deg, #48556380, #00000048),
     url('/assets/src/img/card3.jpg') no-repeat center;
     background-size: cover;
 }
