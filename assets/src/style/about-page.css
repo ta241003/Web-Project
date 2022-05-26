@@ -1,8 +1,8 @@
 /* Head */
 .header {
     background: 
-    linear-gradient(135deg, #48556380, #29323c),
-    url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center; 
+    linear-gradient(135deg, #48556380, #29323c7a),
+    url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center fixed; 
     background-size: cover;
     min-height: 300px;
     display: grid;
