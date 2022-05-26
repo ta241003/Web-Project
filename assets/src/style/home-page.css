@@ -5,6 +5,18 @@
 .last-content {
     clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
 }
+
+/* Edit */
+.fw-content-first{
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/src/img/home-bg.jpg") center/cover no-repeat fixed;
+}
+
+.fw-content-second{
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/src/img/home-bg-outside.jpg") center/cover no-repeat fixed;
+}
+
 .col-img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
