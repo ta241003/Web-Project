@@ -57,7 +57,19 @@ app.post('/signUp', encoder, (req, res) => {
 
 // get home page
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/test.html');
+  res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/page/about.html');
+});
+
+app.get('/room', (req, res) => {
+  res.sendFile(__dirname + '/page/room.html');
+});
+
+app.get('/exper', (req, res) => {
+  res.sendFile(__dirname + '/page/exper.html');
 });
 
 app.listen(process.env.PORT, () => console.log("Running . . ."));
