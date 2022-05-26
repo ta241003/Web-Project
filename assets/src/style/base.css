@@ -293,7 +293,7 @@ img {
 }
 
 /* full width */
-.fw-content {
+/* .fw-content {
     padding: 2.5rem 0;
     background-color: #ffcd4d;
 }
@@ -315,11 +315,63 @@ img {
     
 }
 /*  */
-.btn-contact-end {
+/* .btn-contact-end {
     text-transform: uppercase;
     font-size: 0.7rem;
     border: none;
     min-width: 150px;
     padding: .8rem 0.5rem;
     background: #212529;
+} */ 
+
+
+.contact-form{
+    background: linear-gradient(to bottom,#dbd95ad3 0%,#a1ceda 100%);
+    min-height:20px;
+    padding-bottom:30px;
+   }
+   .contact-container{
+    color:#fff;
+    text-align:center;
+   }
+   .contact-container h3{
+    font-size:2.5rem;
+   }
+   .contact-container p{
+    font-size:1.2rem;
+    padding:1rem0;
+    font-family:cursive;
+   }
+
+   .contact-content .contact-sub{
+    display:flex;
+    justify-content:center;
+    height:40px;
+   }
+   .contact-content .contact-sub i{
+    background:#000;
+    line-height:40px;
+    width:40px;
+   }
+
+.contact-content .contact-sub .contact-sub-cont,
+.contact-content .contact-sub .btn-contact-end{
+ outline:none;
+ border:none;
+}
+.contact-content .contact-sub .contact-sub-cont{
+ width:300px;
+ padding:10px;
+}
+.contact-content .contact-sub .btn-contact-end{
+ background:#000;
+ padding:0 10px;
+ color:#fff;
+ text-transform:uppercase;
+ cursor:pointer;
+ transition:0.6 ease;
+}
+
+.contact-content .contact-sub .btn-contact-end:hover{
+    background: orange;
 }
