@@ -4,9 +4,8 @@
 }
 /* Header */
 .head-expe {
-    background: 
-    linear-gradient(135deg, #48556380, #29323c9c),
-    url('/assets/src/img/card1.jpg') no-repeat center; 
+    background:
+    url('/assets/src/img/expe-bg.jpg') no-repeat center fixed; 
     background-size: cover;
     min-height: 300px;
     display: grid;
@@ -33,6 +32,10 @@
     border-bottom: 5px solid var(--text-dark);
     width: 235px;
     margin: 15px 0;
+}
+
+.title-expe h1 {
+    color: #ffcc56;
 }
 
 .sec-width{
@@ -100,4 +103,11 @@
         width: 100px;
         height: 100px;
     }
+}
+
+.direct-fr-exper {
+    background: 
+    linear-gradient(135deg, #48556380, #29323ca0),
+    url('/assets/src/img/home-bg-outside.jpg') no-repeat center fixed; 
+    background-size: cover;
 }
