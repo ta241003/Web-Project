@@ -18,7 +18,7 @@ app.post('/contact', encoder, (req, res) => {
 });
 
 // func send email
-function send(email) {
+function send(email) {  
   /// transporter
   const transporter = nodemailer.createTransport({
     service: 'gmail',
