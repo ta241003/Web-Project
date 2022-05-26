@@ -13,6 +13,7 @@
   <!-- CSS file link -->
   <link rel="stylesheet" href="/assets/src/style/room-page.css">
   <link rel="stylesheet" href="/assets/src/style/base.css">
+  <link rel="stylesheet" href="/assets/src/style/form.css">
   <!-- Favicon -->
   <link rel="icon" href="http://lab.finalterm.online/img/logo-hotel.png" type="image/x-icon">
   <!-- Icon Font Awesome -->
@@ -58,8 +59,8 @@
           </li>
         </ul>
         <!-- Form -->
-        <div class="  ">
-          <button id="login-btn" type="button" class="btn btn-warning btn-nav-bar login-btn">
+        <div class="">
+          <button id="login-btn" data-modal-target="#modal_external" type="button" class="btn btn-warning btn-nav-bar login-btn">
             <i class="bi bi-person-circle"></i>
             <b>Account</b>
           </button>
@@ -67,6 +68,51 @@
       </div>
     </div>
   </nav>
+  <!-- login form -->
+  <div class="modal_external" id="modal_external">
+    <div class="modal-header">
+      <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
+      <div class="title">Sign In</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <form class="modal-body">
+      <input type="text" class="items" placeholder="Username">
+      <input type="password" class="items" placeholder="Password">
+      <button type="submit" class="signIn-btn btn-warning btn items">Sign in</button>
+    </form>
+    <div class="fg-sup-cont">
+      <a href="#" class="forgt-pssw-link">Forgot Password</a>
+      <a href="#" data-modal-target="#modal_external_signUp" class="signUp-link">Sign Up</a>
+    </div>
+  </div>
+  <!-- sign up form -->
+  <div class="modal_external_signUp" id="modal_external_signUp">
+    <div class="modal-header-signUp">
+      <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
+      <div class="title">Sign Up</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <form class="modal-body-signUp">
+      <input type="email" class="items" placeholder="Email">
+      <input type="text" class="items" placeholder="Phone Number">
+      <input type="text" class="items" placeholder="Username">
+      <input type="password" class="items" placeholder="Password">
+      <input type="password" class="items" placeholder="Confirm Password">
+      <button type="submit" class="signIn-btn btn-warning btn items">Sign up</button>
+    </form>
+    <div class="con-wth-social">
+      <a href="" class="with-fb item-cont">
+        <i class="bi bi-facebook"></i>
+        <p>Continues with facebook</p>
+      </a>
+      <a href="" class="with-ins item-cont">
+        <i class="bi bi-instagram"></i>
+        <p>Continues with instagram</p>
+      </a>
+    </div>
+  </div>
+  <!-- overlay when calling pop up -->
+  <div id="overlay"></div>
   <!-- Header Carousel -->
   <div class="header">
     <!-- Carousel -->
@@ -490,6 +536,7 @@
     crossorigin="anonymous"></script>
   <!-- SCRIPT -->
   <script src="/assets/src/javascript/all-page.js"></script>
+  <script src="/assets/src/javascript/formBehave.js"></script>
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

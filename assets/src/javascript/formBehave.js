@@ -8,6 +8,7 @@ openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget)
     openModal(modal);
+    console.log("hell")
   })
 });
 
