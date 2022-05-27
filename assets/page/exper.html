@@ -23,6 +23,7 @@
 
 <body>
   <style>
+    /*base*/
     /* Variable */
     :root {
       --bs-blue: #0d6efd;
@@ -134,12 +135,6 @@
     .gap {
       width: 100%;
       height: 25px;
-    }
-
-    .btn-submit {
-      background: transparent;
-      border: none;
-
     }
 
     .navbar {
@@ -353,8 +348,6 @@
       background-color: #212529;
     }
 
-
-
     /*  */
 
     @media screen and (min-width:992px) {
@@ -363,321 +356,66 @@
       }
     }
 
-    /* full width */
-    .fw-content {
-      padding: 2.5rem 0;
-      background-color: #ffcd4d;
+    .contact-form {
+      background: #ffcd4d;
+      min-height: 20px;
+      padding-bottom: 30px;
     }
 
-    @media screen and (max-width:1000px) {
-      @media screen and (max-width:450px) {
-        .btn-contact-end {
-          margin-left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .contact-sub-cont h3 {
-          text-align: center;
-        }
-      }
-    }
-
-    @media screen and (min-width:450px) {
-      .btn-contact-end {
-        clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-      }
-
-    }
-
-    /*  */
-    .btn-contact-end {
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      border: none;
-      min-width: 150px;
-      padding: .8rem 0.5rem;
-      background: #212529;
-    }
-
-    /* Direct content */
-    /* direct section */
-    .direct-newpage-cont {
-      min-height: 300px;
-      color: #fff;
-      background:
-        linear-gradient(135deg, #48556380, #29323ca0),
-        url('/assets/src//img/counter-bg.jpg') no-repeat center;
-      background-position: center;
-      display: grid;
-      place-content: center;
+    .contact-container {
+      padding: 1rem;
+      color: var(--text-black);
       text-align: center;
     }
 
-    .direct-newpage-cont h3 {
-      text-transform: uppercase;
+    .contact-container h3 {
+      font-size: 2.5rem;
     }
 
-    .direct-newpage-cont button {
-      width: 175px;
-      height: auto;
-      border: 2px solid #ffcd4d;
-      border-radius: 12px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #ffcd4d;
-      background-color: transparent;
-      padding: 0.3rem 1rem;
+    .contact-container p {
+      font-size: 1.2rem;
+      /* padding: 1rem; */
     }
 
-    .direct-newpage-cont button:hover {
-      transition: .3s;
-      background-color: #212529;
-    }
-
-    .modal_external {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0);
-
-      /* transform: translate(-50%, -50%); */
-      transition: 200ms ease-in-out;
-      border: 1px solid black;
-      border-radius: 10px;
-      z-index: 100;
-      background-color: #212529;
-      width: 500px;
-      max-width: 100%;
-    }
-
-    .modal_external.active {
-      transform: translate(-50%, -50%) scale(1);
-    }
-
-    .modal-header {
-      padding: 10px 15px;
+    .contact-content .contact-sub {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #fff;
-    }
-
-    .modal-header .title {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    .modal-header .close-button {
-      cursor: pointer;
-      border: none;
-      outline: none;
-      background: none;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .modal-body {
-      padding: 1.3rem 2rem;
-      /* gap: 1re; */
-    }
-
-    .modal-body .items {
-      margin-bottom: .56rem;
-    }
-
-    .modal-body .signIn-btn {
-      font-weight: 600;
-    }
-
-    #overlay {
-      z-index: 10;
-      position: fixed;
-      opacity: 0;
-      transition: 200ms ease-in-out;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, .5);
-      pointer-events: none;
-    }
-
-    #overlay.active {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    /* sign up */
-    .fg-sup-cont {
-      padding: 0 2rem;
-      padding-bottom: 1rem;
-    }
-
-    .fg-sup-cont a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .forgt-pssw-link {
-      border-right: 1px solid #fff;
-      padding: 0 .4rem;
-    }
-
-    /* .signUp-link{
-} */
-
-    .modal_external_signUp {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0);
-
-      /* transform: translate(-50%, -50%); */
-      transition: 200ms ease-in-out;
-      border: 1px solid black;
-      border-radius: 10px;
-      z-index: 100;
-      background-color: #212529;
-      width: 500px;
-      max-width: 100%;
-    }
-
-    .modal_external_signUp.active {
-      transform: translate(-50%, -50%) scale(1);
-    }
-
-    .modal-header-signUp {
-      padding: 10px 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #fff;
-    }
-
-    .modal-header-signUp .title {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-
-    .modal-header-signUp .close-button {
-      cursor: pointer;
-      border: none;
-      outline: none;
-      background: none;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .modal-body-signUp {
-      padding: 1.3rem 2rem;
-      /* gap: 1re; */
-    }
-
-    .modal-body-signUp .items {
-      margin-bottom: .56rem;
-    }
-
-    .modal-body-signUp .signIn-btn {
-      font-weight: 600;
-    }
-
-    /* Social icon */
-    .con-wth-social {
-      display: flex;
-      flex-direction: column;
-      /* justify-content: start; */
-      padding: 0 2rem;
-      padding-bottom: 1rem;
-      gap: .3rem;
-    }
-
-    .con-wth-social a {
-      text-decoration: none;
-      color: #fff;
-    }
-
-    .con-wth-social .item-cont {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       justify-content: center;
-      padding: .3rem;
-      /* background-color: #ffc107; */
-      -moz-border-radius: 4px;
-      -webkit-border-radius: 4px;
-      border-radius: 4px;
+      /* height: 40px; */
+      /* padding: 0 1rem; */
     }
 
-    .con-wth-social .item-cont p {
-      margin-bottom: 0;
-      margin-left: .5rem;
-      font-weight: 600;
+    .contact-content .contact-sub .contact-sub-cont,
+    .contact-content .contact-sub .btn-contact-end {
+      outline: none;
+      border: none;
     }
 
-    /* .con-wth-social .item-cont .bi{
-  color: #212529;
-} */
-    .with-fb {
-      background-color: #077ae9;
+    .contact-content .contact-sub .contact-sub-cont {
+      max-width: 341px;
+      /* padding: 10px; */
     }
 
-    .with-fb p,
-    .bi {
+    .contact-content .contact-sub .btn-contact-end {
+      background: #000;
+      padding: 0 1.4rem;
       color: #fff;
-    }
-
-    /* .with-fb  */
-    .with-ins {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%);
-    }
-
-    /* Element */
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      width: 100%;
-      height: 50px;
-      margin: 0;
-      padding: 0 20px;
-      vertical-align: middle;
-      background: #fff;
-      border: 3px solid #fff;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 50px;
-      color: #888;
-      -moz-border-radius: 4px;
-      -webkit-border-radius: 4px;
+      text-transform: uppercase;
+      cursor: pointer;
       border-radius: 4px;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      -o-transition: all .3s;
-      -moz-transition: all .3s;
-      -webkit-transition: all .3s;
-      -ms-transition: all .3s;
-      transition: all .3s;
+      -webkit-border-radius: 4px;
+      height: 50px;
+      font-weight: 600;
+
     }
 
-    input[type="text"]:focus,
-    input[type="password"]:focus,
-    input[type="email"] {
-      outline: 0;
-      background: #fff;
-      border: 3px solid #fff;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
+    @media screen and (max-width:340px) {
+      .contact-content .contact-sub {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
 
-
+    /*exper*/
     .customer img {
       width: 100%;
       display: block;
@@ -801,6 +539,41 @@
       }
     }
 
+    /* direct section */
+    .direct-newpage-cont {
+      min-height: 300px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, #48556380, #29323ca0),
+        url('/assets/src//img/counter-bg.jpg') no-repeat center;
+      background-position: center;
+      display: grid;
+      place-content: center;
+      text-align: center;
+    }
+
+    .direct-newpage-cont h3 {
+      text-transform: uppercase;
+    }
+
+    .direct-newpage-cont button {
+      width: 175px;
+      height: auto;
+      border: 2px solid #ffcd4d;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffcd4d;
+      background-color: transparent;
+      padding: 0.3rem 1rem;
+    }
+
+    .direct-newpage-cont button:hover {
+      transition: .3s;
+      background-color: #212529;
+    }
+
+
     .direct-fr-exper {
       background:
         linear-gradient(135deg, #48556380, #29323ca0),
@@ -814,6 +587,250 @@
 
     .col-cont-img-expe-2 {
       box-shadow: 20px 20px 15px #b4b4a7;
+    }
+
+    /*form*/
+    .modal_external {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+
+      /* transform: translate(-50%, -50%); */
+      transition: 200ms ease-in-out;
+      border: 1px solid black;
+      border-radius: 10px;
+      z-index: 100;
+      background-color: #212529;
+      width: 500px;
+      max-width: 100%;
+    }
+
+    .modal_external.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-header {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #fff;
+    }
+
+    .modal-header .title {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .modal-header .close-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .modal-body {
+      padding: 1.3rem 2rem;
+      /* gap: 1re; */
+    }
+
+    .modal-body .items {
+      margin-bottom: .56rem;
+    }
+
+    .modal-body .signIn-btn {
+      font-weight: 600;
+    }
+
+    #overlay {
+      z-index: 10;
+      position: fixed;
+      opacity: 0;
+      transition: 200ms ease-in-out;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, .5);
+      pointer-events: none;
+    }
+
+    #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    /* sign up */
+    .fg-sup-cont {
+      padding: 0 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .fg-sup-cont a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .forgt-pssw-link {
+      border-right: 1px solid #fff;
+      padding: 0 .4rem;
+    }
+
+    /* .signUp-link{
+    } */
+
+    .modal_external_signUp {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+
+      /* transform: translate(-50%, -50%); */
+      transition: 200ms ease-in-out;
+      border: 1px solid black;
+      border-radius: 10px;
+      z-index: 100;
+      background-color: #212529;
+      width: 500px;
+      max-width: 100%;
+    }
+
+    .modal_external_signUp.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-header-signUp {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #fff;
+    }
+
+    .modal-header-signUp .title {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .modal-header-signUp .close-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .modal-body-signUp {
+      padding: 1.3rem 2rem;
+      /* gap: 1re; */
+    }
+
+    .modal-body-signUp .items {
+      margin-bottom: .56rem;
+    }
+
+    .modal-body-signUp .signIn-btn {
+      font-weight: 600;
+    }
+
+    /* Social icon */
+    .con-wth-social {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: start; */
+      padding: 0 2rem;
+      padding-bottom: 1rem;
+      gap: .3rem;
+    }
+
+    .con-wth-social a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .con-wth-social .item-cont {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: .3rem;
+      /* background-color: #ffc107; */
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+    }
+
+    .con-wth-social .item-cont p {
+      margin-bottom: 0;
+      margin-left: .5rem;
+      font-weight: 600;
+    }
+
+    /* .con-wth-social .item-cont .bi{
+      color: #212529;
+    } */
+    .with-fb {
+      background-color: #077ae9;
+    }
+
+    .with-fb p,
+    .bi {
+      color: #fff;
+    }
+
+    /* .with-fb  */
+    .with-ins {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%);
+    }
+
+    /* Element */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      /* height: 50px; */
+      margin: 0;
+      padding: 0 20px;
+      vertical-align: middle;
+      background: #fff;
+      border: 3px solid #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 50px;
+      color: #888;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -o-transition: all .3s;
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -ms-transition: all .3s;
+      transition: all .3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"] {
+      outline: 0;
+      background: #fff;
+      border: 3px solid #fff;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
   </style>
   <!-- NAVBAR -->
@@ -1005,10 +1022,20 @@
     </div>
   </section>
   <!-- Contact form sub content -->
-  <div class="fw-content contact-content">
-    <div class="container contact-sub-cont">
-      <h3>Find out <br> how can we help you</h3>
-      <button class="btn-contact-end" style="color: #fff;">Contact us</button>
+  <div class="contact-form">
+    <div class="contact-container">
+      <h3 style="font-weight: 600;">Contact us</h3>
+      <p>
+        To get more information, Please enter your email. Thank you!
+      </p>
+      <div class="">
+        <form action="/contact" class="contact-content">
+          <div class="contact-sub">
+            <input type="email" name="email" class="contact-sub-cont" placeholder="Enter your email">
+            <input type="button" value="Contact" class="btn-contact-end">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <!-- Footer -->

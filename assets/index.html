@@ -324,10 +324,10 @@
 
     .item-1 {
       background: linear-gradient(135deg, #48556380, #29323c42),
-      url('/assets/src/img/head-home.jpg') no-repeat center;
+        url('/assets/src/img/head-home.jpg') no-repeat center;
       background-size: cover;
     }
-    
+
     .item-2 {
       background: linear-gradient(135deg, #48556380, #29323c4c),
         url('/assets/src/img/img-card2.jpg') no-repeat center;
@@ -363,7 +363,64 @@
       background-color: #212529;
     }
 
+    .contact-form {
+      background: #ffcd4d;
+      min-height: 20px;
+      padding-bottom: 30px;
+    }
 
+    .contact-container {
+      padding: 1rem;
+      color: var(--text-black);
+      text-align: center;
+    }
+
+    .contact-container h3 {
+      font-size: 2.5rem;
+    }
+
+    .contact-container p {
+      font-size: 1.2rem;
+      /* padding: 1rem; */
+    }
+
+    .contact-content .contact-sub {
+      display: flex;
+      justify-content: center;
+      /* height: 40px; */
+      /* padding: 0 1rem; */
+    }
+
+    .contact-content .contact-sub .contact-sub-cont,
+    .contact-content .contact-sub .btn-contact-end {
+      outline: none;
+      border: none;
+    }
+
+    .contact-content .contact-sub .contact-sub-cont {
+      max-width: 341px;
+      /* padding: 10px; */
+    }
+
+    .contact-content .contact-sub .btn-contact-end {
+      background: #000;
+      padding: 0 1.4rem;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      height: 50px;
+      font-weight: 600;
+
+    }
+
+    @media screen and (max-width:340px) {
+      .contact-content .contact-sub {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
 
     /*  */
 
@@ -377,26 +434,6 @@
     .fw-content {
       padding: 2.5rem 0;
       background-color: #ffcd4d;
-    }
-
-    @media screen and (max-width:1000px) {
-      @media screen and (max-width:450px) {
-        .btn-contact-end {
-          margin-left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .contact-sub-cont h3 {
-          text-align: center;
-        }
-      }
-    }
-
-    @media screen and (min-width:450px) {
-      .btn-contact-end {
-        clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-      }
-
     }
 
     /*  */
@@ -776,7 +813,7 @@
   </style>
   <!-- new -->
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 20;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
@@ -829,7 +866,7 @@
     </div>
   </div>
   <!-- sign up form -->
-  <div class="modal_external_signUp" id="modal_external_signUp">
+  <div class="modal_external_signUp" id="modal_external_signUp" style="z-index:100;">
     <div class="modal-header-signUp">
       <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
       <div class="title">Sign Up</div>
@@ -1008,13 +1045,23 @@
       </div>
     </div>
   </div>
-  <!-- Contact form sub content -->
-  <div class="fw-content contact-content">
-    <div class="container contact-sub-cont">
-      <h3>Find out <br> how can we help you</h3>
-      <button class="btn-contact-end" style="color: #fff;">Contact us</button>
+  <!-- Contact form -->
+  <section class="contact-form">
+    <div class="contact-container">
+      <h3 style="font-weight: 600;">Contact us</h3>
+      <p>
+        To get more information, Please enter your email. Thank you!
+      </p>
+      <div class="">
+        <form action="/contact" class="contact-content">
+          <div class="contact-sub">
+            <input type="email" name="email" class="contact-sub-cont" placeholder="Enter your email">
+            <input type="button" value="Contact" class="btn-contact-end">
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
