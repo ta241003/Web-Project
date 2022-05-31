@@ -27,6 +27,6 @@ http://lab.finalterm.online/
 # run demo with database and localhost
 
 
-fix navbar, do more pages. 
+fix navbar, do more pages. (gallery)
 do go up button
 
