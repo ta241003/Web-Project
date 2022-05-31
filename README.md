@@ -28,5 +28,5 @@ http://lab.finalterm.online/
 
 
 fix navbar, do more pages. (gallery)
-do go up button
+do go up button, preloader
 
