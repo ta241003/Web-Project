@@ -33,8 +33,36 @@
 <body>
   <!-- Content -->
   <div class="container">
-    <div class="row">
-      
+    <div class="row ">
+      <!-- COL 1 -->
+      <div class="col owl-carousel owl-theme room-carousel" id="owl-demo">
+        <!-- item 1 -->
+        <div class="item">
+          <img src="/assets/src/img/beach-home.jpg" alt="">
+        </div>
+        <!-- item 2 -->
+        <div class="item">
+          <img src="/assets/src/img/card1.jpg" alt="">
+        </div>
+        <!-- item 3 -->
+        <div class="item">
+          <img src="/assets/src/img/room-content.jpg" alt="">
+        </div>
+      </div>
+      <!-- COL 2 -->
+      <div class="col text-center">
+        dasdjdsj
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 date-row">
+        <div class="col">
+          <h1 class="text-center">From</h1>
+          <input type="date">
+        </div>
+        <div class="col">
+          <h1 class="text-center">To</h1>
+          <input type="date">
+        </div>
+      </div>
     </div>
   </div>
   <!-- SCRIPT WITH BOOSTRAPS -->
@@ -56,62 +84,26 @@
   <script src="assets/owl-carousel/owl.carousel.js"></script>
   <!-- Owl Carousel -->
   <script>
-    $('.near-bod').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      },
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: false,
-    });
     $('.room-carousel').owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      },
+      dots: false,
+      items: 1,
+      // responsive: {
+      //   0: {
+      //     items: 1
+      //   },
+      //   600: {
+      //     items: 1
+      //   },
+      //   1000: {
+      //     items: 1
+      //   }
+      // },
       autoplay: true,
       autoplayTimeout: 5000,
-      autoplayHoverPause: true,
-    });
-    $('.carousel-header').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      },
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: false,
-      dots: false
+      autoplayHoverPause: true, 
     });
   </script>
 </body>

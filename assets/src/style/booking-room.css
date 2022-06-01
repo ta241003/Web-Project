@@ -1,0 +1,15 @@
+
+@media screen and (min-width:576px){
+  #owl-demo {
+    width: 50%;
+  }
+}
+
+.date-row{
+  padding: 0;
+  padding-left: 12px;
+}
+
+input[type="date"] {
+  width: 100%;
+}
