@@ -15,7 +15,7 @@
 }
 @media screen and (min-width:992px) {
     .head-expe {
-        height: 600px;
+        min-height: 661px;
     }
 }
 @media screen and (min-width:577px){

@@ -59,6 +59,11 @@
     --text-gray: #e4e4e4;
 }
 /* header */
+
+.header-room{
+    min-height: 664px;
+}
+
 .item-r-1 {
     background: linear-gradient(135deg, #48556380, #29323caa),
     url('/assets/src/img/card1.jpg') no-repeat center;

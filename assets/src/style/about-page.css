@@ -4,7 +4,7 @@
     linear-gradient(135deg, #48556380, #29323c7a),
     url('http://lab.finalterm.online/img/about-img.jpg') no-repeat center fixed; 
     background-size: cover;
-    min-height: 300px;
+    min-height: 664px;
     display: grid;
     place-content: center;
     text-align: center;
