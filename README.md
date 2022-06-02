@@ -28,5 +28,5 @@ http://lab.finalterm.online/
 
 # for next round
 fix navbar, do more pages. 
-do go up button
+do go up button, preloader (openning animation)
 

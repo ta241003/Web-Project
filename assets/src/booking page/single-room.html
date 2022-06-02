@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Experience</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Frammework boostrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- FONT -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <!--  -->
+  <!-- CSS -->
   <link rel="stylesheet" href="/assets/src/style/base.css">
-  <link rel="stylesheet" href="/assets/src/style/Experience.css">
   <link rel="stylesheet" href="/assets/src/style/form.css">
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/src/style/booking-room.css">
   <!-- Favicon -->
   <link rel="icon" href="http://lab.finalterm.online/img/logo-hotel.png" type="image/x-icon">
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl carousel theme -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <title>Single Room | Booking</title>
 </head>
-<html>
+
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100000;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 20;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="80" alt="">
@@ -40,15 +50,16 @@
             <a class="nav-link" aria-current="page" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Room</a>
+            <a class="nav-link active" aria-current="page" href="#">Room</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Experiences</a>
+            <a class="nav-link" aria-current="page" href="#">Experiences</a>
           </li>
         </ul>
         <!-- Form -->
         <div class="">
-          <button id="login-btn" data-modal-target="#modal_external" type="button" class="btn btn-warning btn-nav-bar login-btn">
+          <button id="login-btn" data-modal-target="#modal_external" type="button"
+            class="btn btn-warning btn-nav-bar login-btn">
             <i class="bi bi-person-circle"></i>
             <b>Account</b>
           </button>
@@ -74,7 +85,7 @@
     </div>
   </div>
   <!-- sign up form -->
-  <div class="modal_external_signUp" id="modal_external_signUp">
+  <div class="modal_external_signUp" id="modal_external_signUp" style="z-index: 100;">
     <div class="modal-header-signUp">
       <img src="/assets/src/img/logo-hotel.png" class="img-fluid" width="45" alt="">
       <div class="title">Sign Up</div>
@@ -101,126 +112,44 @@
   </div>
   <!-- overlay when calling pop up -->
   <div id="overlay"></div>
-  <div class="header head-expe">
-    <form action="" class="content">
-      <h1 style="font-family: 'Great Vibes', cursive; font-size: 50px">Experiences</h1>
-      <p>A well-known quote, contained in a blockquote element</p>
-      <figcaption class="blockquote-footer" style="color: #ffcd4d;">
-        Someone famous in <cite title="Source Title">Source Title</cite>
-      </figcaption>
-      <button type="submit">Click Here</button>
-    </form action="">
-  </div>
-  <br><br>
+  <br><br><br><br>
+  <!-- Content -->
   <div class="container">
-    <div class="row align-items-center row-cols-1 row-cols-md-2 g-4">
+    <div class="row ">
+      <!-- COL 1 -->
+      <div class="col owl-carousel owl-theme room-carousel" id="owl-demo">
+        <!-- item 1 -->
+        <div class="item">
+          <img src="/assets/src/img/customer-banner.jpg" alt="">
+        </div>
+        <!-- item 2 -->
+        <div class="item">
+          <img src="/assets/src/img/card3.jpg" alt="">
+        </div>
+        <!-- item 3 -->
+        <div class="item">
+          <img src="/assets/src/img/room-content.jpg" alt="">
+        </div>
+      </div>
+      <!-- COL 2 -->
+      <div class="col text-center">
+        dasdjdsj
+      </div>
+    </div>
+    <br><br>
+    <!-- DATE ROW -->
+    <div class="row row-cols-1 row-cols-md-2 date-row">
       <div class="col">
-        <img src="/assets/src/img/golf.jpg" alt="" width="420" class="img-fluid col-cont-img-expe">
+        <h1 class="text-center">From</h1>
+        <input type="date">
       </div>
-      <div class="col title-expe">
-        <h1>Golf</h1>
-        <p>Situated in the idyllic countryside of the Hudson Valley, the atmosphere at Silo Ridge is laid-back and casual, allowing you to reconnect with family and nature. Here we promise nearly limitless possibilities for unforgettable family recreation, all just a short drive from Manhattan.</p>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="direct-newpage-cont direct-fr-exper">
-    <form action="" class="content">
-      <h3>Come to see our services</h3>
-      <p>A well-known quot</p>
-      <figcaption class="blockquote-footer" style="color: #ffcd4d;">
-        Someone famous in <cite title="Source Title">Source Title</cite>
-      </figcaption>
-      <button type="submit">Click Here</button>
-    </form action="">
-  </div>
-  <div class="container">
-    <br><br><br>
-    <div class="row align-items-center  row-cols-1 row-cols-md-2 ">
-        <div class="col ">
-          <img src="/assets/src/img/fishing.jpg" width="420" alt="" class="img-fluid col-cont-img-expe-2">
-        </div>
-      <div class="col title-expe">
-        <h1>Fishing</h1>
-        <p>Situated in the idyllic countryside of the Hudson Valley, the atmosphere at Silo Ridge is laid-back and casual, allowing you to reconnect with family and nature. Here we promise nearly limitless possibilities for unforgettable family recreation, all just a short drive from Manhattan.</p>
-      </div>
-    </div>
-  </div>  
-  <br><br>
-  <!-- Grid content computer tablet -->
-  <section class="customers" id="customers">
-    <div class="sec-width">
-      <div class="title">
-        <h2 style="color: #ffd05a;">customers</h2>
-      </div>
-      <div class="customers-container">
-        <!-- single customer -->
-        <div class="customer">
-          <div class="rating">
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="far fa-star"></i></span>
-          </div>
-          <h3>The food is good</h3>
-          <p>Great taste! The food is cooked to perfection. Harmonious balance. A place worth experiencing.</p>
-          <img src="/assets/src/img/customers1.jpg" alt="customer image">
-          <span>Dawn, Singapore</span>
-        </div>
-        <!-- end of single customer -->
-        <!-- single customer -->
-        <div class="customer">
-          <div class="rating">
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="far fa-star"></i></span>
-          </div>
-          <h3>Perfect View</h3>
-          <p>Beautiful space with a large and cool swimming pool, very nice rooms with a sea view, giving a very
-            wonderful experience.</p>
-          <img src="/assets/src/img/customers2.jpg" alt="customer image">
-          <span>Linda, America</span>
-        </div>
-        <!-- end of single customer -->
-        <!-- single customer -->
-        <div class="customer">
-          <div class="rating">
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="fas fa-star"></i></span>
-            <span><i class="far fa-star"></i></span>
-          </div>
-          <h3>Very good service</h3>
-          <p>The service staff is very enthusiastic, dedicated to taking care of customers. The services here are
-            diverse, the prices are reasonable, it is worth enjoying during your vacation.</p>
-          <img src="/assets/src/img/customers3.jpg" alt="customer image">
-          <span>David, England</span>
-        </div>
-        <!-- end of single customer -->
-      </div>
-    </div>
-  </section>
-  <!-- Contact form sub content -->
-  <div class="contact-form">
-    <div class="contact-container">
-      <h3 style="font-weight: 600;">Contact us</h3>
-      <p>
-        To get more information, Please enter your email. Thank you!
-      </p>
-      <div class="">
-        <form action="/contact" class="contact-content">
-          <div class="contact-sub">
-            <input type="email" name="email" class="contact-sub-cont" placeholder="Enter your email">
-            <input type="button" value="Contact" class="btn-contact-end">
-          </div>
-        </form>
+      <div class="col">
+        <h1 class="text-center">To</h1>
+        <input type="date">
       </div>
     </div>
   </div>
+  <br><br><br>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -235,7 +164,7 @@
           <p style="max-width: 198px;">Join with us and have your best holiday</p>
           <!-- Payments Partners -->
           <h3 class="tilte-footer blockquote-footer">Partners</h3>
-          <ul class="pm-pn-cont">
+          <ul class="pm-pn-cont list-unstyled">
             <li class="pm-pn-item">
               <img src="/assets/src/img/payment-partner1.jpg" width="60" class="img-fluid" alt="pm-partner">
             </li>
@@ -264,7 +193,7 @@
         </div>
         <div class="col">
           <h3 class="tilte-footer blockquote-footer">Download</h3>
-          <ul class="dl-cont">
+          <ul class="dl-cont list-unstyled">
             <li class="dl-item">
               <img src="/assets/src/img/dl-img-1.jpg" alt="download-img" width="150" class="img-fluid">
             </li>
@@ -283,10 +212,10 @@
               <a class="nav-link useful-links-item" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link useful-links-item" aria-current="page" href="#">Room</a>
+              <a class="nav-link active useful-links-item active" aria-current="page" href="#">Room</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active useful-links-item" aria-current="page" href="#">Experiences</a>
+              <a class="nav-link useful-links-item" aria-current="page" href="#">Experiences</a>
             </li>
           </nav>
         </div>
@@ -296,7 +225,7 @@
           <h6><b>TEL:</b> <span class="sub-content">000-000-000</span></h6>
           <p><b>Address:</b> <span class="sub-content">bembem</span></p>
           <!-- CONTACT ICON -->
-          <ul class="contact-item">
+          <ul class="contact-item list-unstyled">
             <li><a href=""><i class="bi bi-facebook"></i></a></li>
             <li><a href=""><i class="bi bi-instagram item-item-contact"></i></a></li>
             <li><a href=""><i class="bi bi-twitter item-item-contact"></i></a></li>
@@ -308,11 +237,8 @@
     <hr>
     <div class="text-center ls-ft-text">Copyright © 2022 DDD hotel</div>
   </footer>
-  <!-- Bootstrap5JS CDN Links -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> -->
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- SCRIPT -->
+  <script src="/assets/src/javascript/formBehave.js"></script>
   <!-- SCRIPT WITH BOOSTRAPS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -320,8 +246,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-  <!-- Form behave -->
-  <script src="/assets/src/javascript/formBehave.js"></script>
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -334,25 +258,28 @@
   <script src="assets/owl-carousel/owl.carousel.js"></script>
   <!-- Owl Carousel -->
   <script>
-    $('.near-bod').owlCarousel({
+    $('.room-carousel').owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      },
+      dots: false,
+      items: 1,
+      // responsive: {
+      //   0: {
+      //     items: 1
+      //   },
+      //   600: {
+      //     items: 1
+      //   },
+      //   1000: {
+      //     items: 1
+      //   }
+      // },
       autoplay: true,
       autoplayTimeout: 5000,
-      autoplayHoverPause: false
+      autoplayHoverPause: true,
     });
   </script>
 </body>
+
 </html>
